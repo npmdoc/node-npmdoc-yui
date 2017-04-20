@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,15 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-    >yui (v3.18.1)</a>
+    <a>yui (v3.18.1)</a>
 </h1>
 <h4>YUI 3 Source</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.yui">module yui</a><ol>
 
@@ -2539,9 +2534,9 @@
         args = arguments,
         l = args.length,
         instanceOf = function(o, type) {
-            return (o &#x26;&#x26; o.hasOwnProperty &#x26;&#x26; (o instanceof type));
+            return (o &amp;&amp; o.hasOwnProperty &amp;&amp; (o instanceof type));
         },
-        gconf = (typeof YUI_config !== &#x27;undefined&#x27;) &#x26;&#x26; YUI_config;
+        gconf = (typeof YUI_config !== 'undefined') &amp;&amp; YUI_config;
 
     if (!(instanceOf(Y, YUI))) {
         Y = new YUI();
@@ -2557,16 +2552,16 @@
         @example
 
             YUI.GlobalConfig = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -2587,16 +2582,16 @@
 
             // Single global var to include before YUI seed file
             YUI_config = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -2619,7 +2614,7 @@
         // These are applied after YUI.GlobalConfig and YUI_Config,
         // overriding values set in those config files if there is a
         // matching property.
-        for (; i &#x3c; l; i++) {
+        for (; i &lt; l; i++) {
             Y.applyConfig(args[i]);
         }
 
@@ -2693,8 +2688,8 @@ var inst = getInstance();
 
 
 
-var inst = require(&#x22;./index&#x22;).<span class="apidocCodeKeywordSpan">getInstance</span>();
-module.exports = inst.use(&#x22;anim&#x22;);
+var inst = require("./index").<span class="apidocCodeKeywordSpan">getInstance</span>();
+module.exports = inst.use("anim");
 ...</pre></li>
     </ul>
 
@@ -2733,8 +2728,8 @@ module.exports = inst.use(&#x22;anim&#x22;);
 
 
 
-var inst = require(&#x22;./index&#x22;).getInstance();
-module.exports = inst.<span class="apidocCodeKeywordSpan">use</span>(&#x22;anim&#x22;);
+var inst = require("./index").getInstance();
+module.exports = inst.<span class="apidocCodeKeywordSpan">use</span>("anim");
 ...</pre></li>
     </ul>
 
@@ -2798,9 +2793,9 @@ module.exports = inst.<span class="apidocCodeKeywordSpan">use</span>(&#x22;anim&
         args = arguments,
         l = args.length,
         instanceOf = function(o, type) {
-            return (o &#x26;&#x26; o.hasOwnProperty &#x26;&#x26; (o instanceof type));
+            return (o &amp;&amp; o.hasOwnProperty &amp;&amp; (o instanceof type));
         },
-        gconf = (typeof YUI_config !== &#x27;undefined&#x27;) &#x26;&#x26; YUI_config;
+        gconf = (typeof YUI_config !== 'undefined') &amp;&amp; YUI_config;
 
     if (!(instanceOf(Y, YUI))) {
         Y = new YUI();
@@ -2816,16 +2811,16 @@ module.exports = inst.<span class="apidocCodeKeywordSpan">use</span>(&#x22;anim&
         @example
 
             YUI.GlobalConfig = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -2846,16 +2841,16 @@ module.exports = inst.<span class="apidocCodeKeywordSpan">use</span>(&#x22;anim&
 
             // Single global var to include before YUI seed file
             YUI_config = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -2878,7 +2873,7 @@ module.exports = inst.<span class="apidocCodeKeywordSpan">use</span>(&#x22;anim&
         // These are applied after YUI.GlobalConfig and YUI_Config,
         // overriding values set in those config files if there is a
         // matching property.
-        for (; i &#x3c; l; i++) {
+        for (; i &lt; l; i++) {
             Y.applyConfig(args[i]);
         }
 
@@ -2925,8 +2920,8 @@ var inst = getInstance();
     // so that setting it in user configuration prevents the library from
     // using eval(). This is critical for Content Security Policy enabled
     // sites and other environments like Chrome extensions
-    if (!Y.config.hasOwnProperty(&#x27;global&#x27;)) {
-        Y.config.global = Function(&#x27;return this&#x27;)();
+    if (!Y.config.hasOwnProperty('global')) {
+        Y.config.global = Function('return this')();
     }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -2974,15 +2969,15 @@ if (l) {
 
     //Check for conditional modules (in a second+ instance) and add their requirements
     //TODO I hate this entire method, it needs to be fixed ASAP (3.5.0) ^davglass
-    for (i = 0; i &#x3c; len; i++) {
+    for (i = 0; i &lt; len; i++) {
         name = r[i];
         mod = mods[name];
         c.push(name);
-        if (loader &#x26;&#x26; loader.conditions[name]) {
+        if (loader &amp;&amp; loader.conditions[name]) {
             for (j in loader.conditions[name]) {
                 if (loader.conditions[name].hasOwnProperty(j)) {
                     def = loader.conditions[name][j];
-                    go = def &#x26;&#x26; ((def.ua &#x26;&#x26; Y.UA[def.ua]) || (def.test &#x26;&#x26; def.test(Y)));
+                    go = def &amp;&amp; ((def.ua &amp;&amp; Y.UA[def.ua]) || (def.test &amp;&amp; def.test(Y)));
                     if (go) {
                         c.push(def.name);
                     }
@@ -2993,17 +2988,17 @@ if (l) {
     r = c;
     len = r.length;
 
-    for (i = 0; i &#x3c; len; i++) {
+    for (i = 0; i &lt; len; i++) {
         if (!done[r[i]]) {
             name = r[i];
             mod = mods[name];
 
-            if (aliases &#x26;&#x26; aliases[name] &#x26;&#x26; !mod) {
+            if (aliases &amp;&amp; aliases[name] &amp;&amp; !mod) {
                 Y._attach(aliases[name]);
                 continue;
             }
             if (!mod) {
-                modInfo = loader &#x26;&#x26; loader.getModuleInfo(name);
+                modInfo = loader &amp;&amp; loader.getModuleInfo(name);
                 if (modInfo) {
                     mod = modInfo;
                     moot = true;
@@ -3011,41 +3006,41 @@ if (l) {
 
 
                 //if (!loader || !loader.moduleInfo[name]) {
-                //if ((!loader || !loader.moduleInfo[name]) &#x26;&#x26; !moot) {
-                if (!moot &#x26;&#x26; name) {
-                    if ((name.indexOf(&#x27;skin-&#x27;) === -1) &#x26;&#x26; (name.indexOf(&#x27;css&#x27;) === -1)) {
+                //if ((!loader || !loader.moduleInfo[name]) &amp;&amp; !moot) {
+                if (!moot &amp;&amp; name) {
+                    if ((name.indexOf('skin-') === -1) &amp;&amp; (name.indexOf('css') === -1)) {
                         Y.Env._missed.push(name);
                         Y.Env._missed = Y.Array.dedupe(Y.Env._missed);
-                        Y.message(&#x27;NOT loaded: &#x27; + name, &#x27;warn&#x27;, &#x27;yui&#x27;);
+                        Y.message('NOT loaded: ' + name, 'warn', 'yui');
                     }
                 }
             } else {
                 done[name] = true;
-                //Don&#x27;t like this, but in case a mod was asked for once, then we fetch it
+                //Don't like this, but in case a mod was asked for once, then we fetch it
                 //We need to remove it from the missed list ^davglass
-                for (j = 0; j &#x3c; Y.Env._missed.length; j++) {
+                for (j = 0; j &lt; Y.Env._missed.length; j++) {
                     if (Y.Env._missed[j] === name) {
-                        Y.message(&#x27;Found: &#x27; + name + &#x27; (was reported as missing earlier)&#x27;, &#x27;warn&#x27;, &#x27;yui&#x27;);
+                        Y.message('Found: ' + name + ' (was reported as missing earlier)', 'warn', 'yui');
                         Y.Env._missed.splice(j, 1);
                     }
                 }
 
                 // Optional dependencies normally work by modifying the
-                // dependency list of a module. If the dependency&#x27;s test
-                // passes it is added to the list. If not, it&#x27;s not loaded.
+                // dependency list of a module. If the dependency's test
+                // passes it is added to the list. If not, it's not loaded.
                 // This following check ensures that optional dependencies
                 // are not attached when they were already loaded into the
                 // page (when bundling for example)
-                if (loader &#x26;&#x26; !loader._canBeAttached(name)) {
+                if (loader &amp;&amp; !loader._canBeAttached(name)) {
                     return true;
                 }
 
 <span class="apidocCodeCommentSpan">                /*
-                    If it&#x27;s a temp module, we need to redo it&#x27;s requirements if it&#x27;s already loaded
-                    since it may have been loaded by another instance and it&#x27;s dependencies might
+                    If it's a temp module, we need to redo it's requirements if it's already loaded
+                    since it may have been loaded by another instance and it's dependencies might
                     have been redefined inside the fetched file.
                 */
-</span>                if (loader &#x26;&#x26; cache &#x26;&#x26; cache[name] &#x26;&#x26; cache[name].temp) {
+</span>                if (loader &amp;&amp; cache &amp;&amp; cache[name] &amp;&amp; cache[name].temp) {
                     loader.getRequires(cache[name]);
                     req = [];
                     modInfo = loader.getModuleInfo(name);
@@ -3062,20 +3057,20 @@ if (l) {
                 es ...</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-for (i = 0; i &#x3c; extras.length; i++) {
+for (i = 0; i &lt; extras.length; i++) {
     if (mods[extras[i]]) {
         core.push(extras[i]);
     }
 }
 
-Y.<span class="apidocCodeKeywordSpan">_attach</span>([&#x27;yui-base&#x27;]);
+Y.<span class="apidocCodeKeywordSpan">_attach</span>(['yui-base']);
 Y._attach(core);
 
 if (Y.Loader) {
     getLoader(Y);
 }
 
-// Y.log(Y.id + &#x27; initialized&#x27;, &#x27;info&#x27;, &#x27;yui&#x27;);
+// Y.log(Y.id + ' initialized', 'info', 'yui');
 ...</pre></li>
     </ul>
 
@@ -3094,7 +3089,7 @@ if (Y.Loader) {
     <li>example usage<pre class="apidocCodePre">...
         getLoader = function(Y, o) {
 var loader = Y.Env._loader,
-    lCore = [ &#x27;loader-base&#x27; ],
+    lCore = [ 'loader-base' ],
     G_ENV = YUI.Env,
     mods = G_ENV.mods;
 
@@ -3122,12 +3117,12 @@ if (loader) {
     <li>description and source-code<pre class="apidocCodePre">_delayCallback = function (cb, until) {
 
     var Y = this,
-        mod = [&#x27;event-base&#x27;];
+        mod = ['event-base'];
 
     until = (Y.Lang.isObject(until) ? until : { event: until });
 
-    if (until.event === &#x27;load&#x27;) {
-        mod.push(&#x27;event-synthetic&#x27;);
+    if (until.event === 'load') {
+        mod.push('event-synthetic');
     }
 
     return function() {
@@ -3188,13 +3183,13 @@ if (Y.Lang.isArray(args[0])) {
 
     if (!Env) {
         Y.Env = {
-            core: [&#x27;get&#x27;, &#x27;features&#x27;, &#x27;intl-base&#x27;, &#x27;yui-log&#x27;, &#x27;yui-log-nodejs&#x27;, &#x27;yui-later&#x27;, &#x27;loader-base&#x27;, &#x27;loader-rollup&#x27;, &#x27;loader
--yui3&#x27;],
-            loaderExtras: [&#x27;loader-rollup&#x27;, &#x27;loader-yui3&#x27;],
+            core: ['get', 'features', 'intl-base', 'yui-log', 'yui-log-nodejs', 'yui-later', 'loader-base', 'loader-rollup', 'loader
+-yui3'],
+            loaderExtras: ['loader-rollup', 'loader-yui3'],
             mods: {}, // flat module map
             versions: {}, // version module map
             base: BASE,
-            cdn: BASE + VERSION + &#x27;/&#x27;,
+            cdn: BASE + VERSION + '/',
             // bootstrapped: false,
             _idx: 0,
             _used: {},
@@ -3203,37 +3198,37 @@ if (Y.Lang.isArray(args[0])) {
             _missed: [],
             _yidx: 0,
             _uidx: 0,
-            _guidp: &#x27;y&#x27;,
+            _guidp: 'y',
             _loaded: {},
             // serviced: {},
             // Regex in English:
-            // I&#x27;ll start at the \b(yui).
-            // 1. Look in the test string for &#x22;yui&#x22; or
-            //    &#x22;yui-base&#x22; or &#x22;yui-davglass&#x22; or &#x22;yui-foobar&#x22; that comes after a word break.  That is, it
-            //    can&#x27;t match &#x22;foyui&#x22; or &#x22;i_heart_yui&#x22;. This can be anywhere in the string.
+            // I'll start at the \b(yui).
+            // 1. Look in the test string for "yui" or
+            //    "yui-base" or "yui-davglass" or "yui-foobar" that comes after a word break.  That is, it
+            //    can't match "foyui" or "i_heart_yui". This can be anywhere in the string.
             // 2. After #1 must come a forward slash followed by the string matched in #1, so
-            //    &#x22;yui-base/yui-base&#x22; or &#x22;yui-pants/yui-pants&#x22;.
-            // 3. The second occurence of the #1 token can optionally be followed by &#x22;-debug&#x22; or &#x22;-min&#x22;,
-            //    so &#x22;yui/yui-min&#x22;, &#x22;yui/yui-debug&#x22;, &#x22;yui-base/yui-base-debug&#x22;. NOT &#x22;yui/yui-tshirt&#x22;.
-            // 4. This is followed by &#x22;.js&#x22;, so &#x22;yui/yui.js&#x22;.
-            // 0. Going back to the beginning, now. If all that stuff in 1-4 comes after a &#x22;?&#x22; in the string,
-            //    then capture the junk between the LAST &#x22;&#x26;&#x22; and the string in 1-4.  So
-            //    &#x22;blah?foo/yui/yui.js&#x22; will capture &#x22;foo/&#x22; and &#x22;blah?some/thing.js&#x26;3.3.0/build/yui-davglass/yui-davglass.js&#x22;
-            //    will capture &#x22;3.3.0/build/&#x22;
+            //    "yui-base/yui-base" or "yui-pants/yui-pants".
+            // 3. The second occurence of the #1 token can optionally be followed by "-debug" or "-min",
+            //    so "yui/yui-min", "yui/yui-debug", "yui-base/yui-base-debug". NOT "yui/yui-tshirt".
+            // 4. This is followed by ".js", so "yui/yui.js".
+            // 0. Going back to the beginning, now. If all that stuff in 1-4 comes after a "?" in the string,
+            //    then capture the junk between the LAST "&amp;" and the string in 1-4.  So
+            //    "blah?foo/yui/yui.js" will capture "foo/" and "blah?some/thing.js&amp;3.3.0/build/yui-davglass/yui-davglass.js"
+            //    will capture "3.3.0/build/"
             //
             // Regex Exploded:
             // (?:\?             Find a ?
-            //   (?:[^&#x26;]*&#x26;)      followed by 0..n characters followed by an &#x26;
-            //   *               in fact, find as many sets of characters followed by a &#x26; as you can
-            //   ([^&#x26;]*)         capture the stuff after the last &#x26; in \1
-            // )?                but it&#x27;s ok if all this ?junk&#x26;more_junk stuff isn&#x27;t even there
+            //   (?:[^&amp;]*&amp;)      followed by 0..n characters followed by an &amp;
+            //   *               in fact, find as many sets of characters followed by a &amp; as you can
+            //   ([^&amp;]*)         capture the stuff after the last &amp; in \1
+            // )?                but it's ok if all this ?junk&amp;more_junk stuff isn't even there
             // \b(               after a word break find either the string
-            //    yui(?:-\w+)?   &#x22;yui&#x22; optionally followed by a -, then more characters
+            //    yui(?:-\w+)?   "yui" optionally followed by a -, then more characters
             // )                 and store the yui-* string in \2
             // \/\2              then comes a / followed by the yui-* string in \2
-            // (?:-(min|debug))? optionally followed by &#x22;-min&#x22; or &#x22;-debug&#x22;
-            // .js               and ending in &#x22;.js&#x22;
-            _BASE_RE: /(?:\?(?:[^&#x26;]*&#x26;)*([^&#x26;]*))?\b(yui(?:-\w+)?)\/\2(?:-(min|debug))?\.js/,
+            // (?:-(min|debug))? optionally followed by "-min" or "-debug"
+            // .js               and ending in ".js"
+            _BASE_RE: /(?:\?(?:[^&amp;]*&amp;)*([^&amp;]*))?\b(yui(?:-\w+)?)\/\2(?:-(min|debug))?\.js/,
             parseBasePath: function(src, pattern) {
                 var match = src.match(pattern),
                     path, filter;
@@ -3248,7 +3243,7 @@ if (Y.Lang.isArray(args[0])) {
                     // extract correct path for mixed combo urls
                     // http://yuilibrary.com/projects/yui3/ticket/2528423
                     if (match[1]) {
-                        path += &#x27;?&#x27; + match[1];
+                        path += '?' + match[1];
                     }
                     path = {
                         filter: filter,
@@ -3257,10 +3252,10 @@ if (Y.Lang.isArray(args[0])) {
                 }
                 return path;
             },
-            getBase: G_ENV &#x26;&#x26; G_ENV.getBase ...</pre></li>
+            getBase: G_ENV &amp;&amp; G_ENV.getBase ...</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 },
-gconf = (typeof YUI_config !== &#x27;undefined&#x27;) &#x26;&#x26; YUI_config;
+gconf = (typeof YUI_config !== 'undefined') &amp;&amp; YUI_config;
 
         if (!(instanceOf(Y, YUI))) {
 Y = new YUI();
@@ -3287,11 +3282,11 @@ contexts.
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">_notify = function (callback, response, args) {
-    if (!response.success &#x26;&#x26; this.config.loadErrorFn) {
+    if (!response.success &amp;&amp; this.config.loadErrorFn) {
         this.config.loadErrorFn.call(this, this, callback, response, args);
     } else if (callback) {
-        if (this.Env._missed &#x26;&#x26; this.Env._missed.length) {
-            response.msg = &#x27;Missing modules: &#x27; + this.Env._missed.join();
+        if (this.Env._missed &amp;&amp; this.Env._missed.length) {
+            response.msg = 'Missing modules: ' + this.Env._missed.join();
             response.success = false;
         }
         if (this.config.throwFail) {
@@ -3300,7 +3295,7 @@ contexts.
             try {
                 callback(this, response);
             } catch (e) {
-                this.error(&#x27;use callback error&#x27;, e, args);
+                this.error('use callback error', e, args);
             }
         }
     }
@@ -3311,7 +3306,7 @@ contexts.
 
     if (provisioned) {
         if (args.length) {
-            Y.log(&#x27;already provisioned: &#x27; + args, &#x27;info&#x27;, &#x27;yui&#x27;);
+            Y.log('already provisioned: ' + args, 'info', 'yui');
         }
         Y.<span class="apidocCodeKeywordSpan">_notify</span>(callback, ALREADY_DONE, args);
         return Y;
@@ -3340,13 +3335,13 @@ if (Y._loading) {
         extendedCore = Y.config.extendedCore || [],
         extras = Y.config.core || [].concat(YUI.Env.core).concat(extendedCore); //Clone it..
 
-    for (i = 0; i &#x3c; extras.length; i++) {
+    for (i = 0; i &lt; extras.length; i++) {
         if (mods[extras[i]]) {
             core.push(extras[i]);
         }
     }
 
-    Y._attach([&#x27;yui-base&#x27;]);
+    Y._attach(['yui-base']);
     Y._attach(core);
 
     if (Y.Loader) {
@@ -3385,7 +3380,7 @@ if (l) {
     <li>description and source-code<pre class="apidocCodePre">_use = function (args, callback) {
 
     if (!this.Array) {
-        this._attach([&#x27;yui-base&#x27;]);
+        this._attach(['yui-base']);
     }
 
     var len, loader, handleBoot,
@@ -3415,8 +3410,8 @@ if (l) {
 
             if (aliases) {
                 len = names.length;
-                for (i = 0; i &#x3c; len; i++) {
-                    if (aliases[names[i]] &#x26;&#x26; !mods[names[i]]) {
+                for (i = 0; i &lt; len; i++) {
+                    if (aliases[names[i]] &amp;&amp; !mods[names[i]]) {
                         a = [].concat(a, aliases[names[i]]);
                     } else {
                         a.push(names[i]);
@@ -3427,7 +3422,7 @@ if (l) {
 
             len = names.length;
 
-            for (i = 0; i &#x3c; len; i++) {
+            for (i = 0; i &lt; len; i++) {
                 name = names[i];
                 if (!skip) {
                     r.push(name);
@@ -3447,7 +3442,7 @@ if (l) {
                     req = m.details.requires;
                     use = m.details.use;
                 } else {
-                    // CSS files don&#x27;t register themselves, see if it has
+                    // CSS files don't register themselves, see if it has
                     // been loaded
                     if (!G_ENV._loaded[VERSION][name]) {
                         missing.push(name);
@@ -3457,12 +3452,12 @@ if (l) {
                 }
 
                 // make sure requirements are attached
-                if (req &#x26;&#x26; req.length) {
+                if (req &amp;&amp; req.length) {
                     process(req);
                 }
 
                 // make sure we grab the submodule dependencies too
-                if (use &#x26;&#x26; use.length) {
+                if (use &amp;&amp; use.length) {
                     process(use, 1);
                 }
             }
@@ -3472,7 +3467,7 @@ if (l) {
         handleLoader = function(fromLoader) {
             var response = fromLoader || {
                     success: true,
-                    msg: &#x27;not dynamic&#x27;
+                    msg: 'not dynamic'
                 },
                 redo, origMissing,
                 ret = true,
@@ -3494,7 +3489,7 @@ if (l) {
                 }
             }
 
-            if (redo &#x26;&#x26; data) {
+            if (redo &amp;&amp; data) {
                 Y._loading = true;
                 Y._use(missing, function() {
                     if (Y._attach(data)) {
@@ -3510,15 +3505,15 @@ if (l) {
                 }
             }
 
-            if (Y._useQueue &#x26;&#x26; Y._useQueue.size() &#x26;&#x26; !Y._loading) {
+            if (Y._useQueue &amp;&amp; Y._useQueue.size() &amp;&amp; !Y._loading) {
                 Y._use.apply(Y, Y._useQueue.next());
             }
 
         };
 
 
-    // YUI().use(&#x27;*&#x27;); // bind everything available
-    if (firstArg === &#x27;*&#x27;) {
+    // YUI().use('*'); // bind everything available
+    if (firstArg === '*') {
         args = [];
         for (i in mods) {
             if (mods.hasOwnProperty(i)) {
@@ -3532,20 +3527,20 @@ if (l) {
         return Y;
     }
 
-    if ((mods.loader || mods[&#x27;loader- ...</pre></li>
+    if ((mods.loader || mods['loader- ...</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    mod.push(&#x27;event-synthetic&#x27;);
+    mod.push('event-synthetic');
 }
 
-Y.log(&#x27;Delaying use callback until: &#x27; + until.event, &#x27;info&#x27;, &#x27;yui&#x27;);
+Y.log('Delaying use callback until: ' + until.event, 'info', 'yui');
 return function() {
-    Y.log(&#x27;Use callback fired, waiting on delay&#x27;, &#x27;info&#x27;, &#x27;yui&#x27;);
+    Y.log('Use callback fired, waiting on delay', 'info', 'yui');
     var args = arguments;
     Y.<span class="apidocCodeKeywordSpan">_use</span>(mod, function() {
-        Y.log(&#x27;Delayed use wrapper callback after dependencies&#x27;, &#x27;info&#x27;, &#x27;yui&#x27;);
+        Y.log('Delayed use wrapper callback after dependencies', 'info', 'yui');
         Y.on(until.event, function() {
             args[1].delayUntil = until.event;
-            Y.log(&#x27;Delayed use callback done after &#x27; + until.event, &#x27;info&#x27;, &#x27;yui&#x27;);
+            Y.log('Delayed use callback done after ' + until.event, 'info', 'yui');
             cb.apply(Y, args);
         }, until.args);
     });
@@ -3570,7 +3565,7 @@ return function() {
             version: version,
             details: details
         },
-        //Instance hash so we don&#x27;t apply it to the same instance twice
+        //Instance hash so we don't apply it to the same instance twice
         applied = {},
         loader, inst, modInfo,
         i, versions = env.versions;
@@ -3602,7 +3597,7 @@ Registers a YUI module and makes it available for use in a `YUI().use()` call or
 as a dependency for other modules.
 
 The easiest way to create a first-class YUI module is to use
-&#x3c;a href=&#x22;http://yui.github.com/shifter/&#x22;&#x3e;Shifter&#x3c;/a&#x3e;, the YUI component build
+&lt;a href="http://yui.github.com/shifter/"&gt;Shifter&lt;/a&gt;, the YUI component build
 tool.
 
 Shifter will automatically wrap your module code in a `YUI.<span class="apidocCodeKeywordSpan">add</span>()` call along
@@ -3610,9 +3605,9 @@ with any configuration info required for the module.
 
 @example
 
-YUI.add(&#x27;davglass&#x27;, function (Y) {
+YUI.add('davglass', function (Y) {
     Y.davglass = function () {
-        Y.log(&#x27;Dav was here!&#x27;);
+        Y.log('Dav was here!');
 ...</pre></li>
     </ul>
 
@@ -3645,8 +3640,8 @@ YUI.add(&#x27;davglass&#x27;, function (Y) {
 
 
 exports.path = function() {   return __dirname;};
-var YUI = require(&#x22;./yui-nodejs/yui-nodejs-debug&#x22;).YUI;
-YUI.<span class="apidocCodeKeywordSpan">applyConfig</span>({ debug: true, filter: &#x22;debug&#x22; });
+var YUI = require("./yui-nodejs/yui-nodejs-debug").YUI;
+YUI.<span class="apidocCodeKeywordSpan">applyConfig</span>({ debug: true, filter: "debug" });
 exports.YUI = YUI;
 ...</pre></li>
     </ul>
@@ -3662,21 +3657,21 @@ exports.YUI = YUI;
     <ul>
     <li>description and source-code<pre class="apidocCodePre">applyTo = function (id, method, args) {
     if (!(method in APPLY_TO_AUTH)) {
-        this.log(method + &#x27;: applyTo not allowed&#x27;, &#x27;warn&#x27;, &#x27;yui&#x27;);
+        this.log(method + ': applyTo not allowed', 'warn', 'yui');
         return null;
     }
 
     var instance = instances[id], nest, m, i;
     if (instance) {
-        nest = method.split(&#x27;.&#x27;);
+        nest = method.split('.');
         m = instance;
-        for (i = 0; i &#x3c; nest.length; i = i + 1) {
+        for (i = 0; i &lt; nest.length; i = i + 1) {
             m = m[nest[i]];
             if (!m) {
-                this.log(&#x27;applyTo not found: &#x27; + method, &#x27;warn&#x27;, &#x27;yui&#x27;);
+                this.log('applyTo not found: ' + method, 'warn', 'yui');
             }
         }
-        return m &#x26;&#x26; m.apply(instance, args);
+        return m &amp;&amp; m.apply(instance, args);
     }
 
     return null;
@@ -3699,9 +3694,9 @@ exports.YUI = YUI;
         args = arguments,
         l = args.length,
         instanceOf = function(o, type) {
-            return (o &#x26;&#x26; o.hasOwnProperty &#x26;&#x26; (o instanceof type));
+            return (o &amp;&amp; o.hasOwnProperty &amp;&amp; (o instanceof type));
         },
-        gconf = (typeof YUI_config !== &#x27;undefined&#x27;) &#x26;&#x26; YUI_config;
+        gconf = (typeof YUI_config !== 'undefined') &amp;&amp; YUI_config;
 
     if (!(instanceOf(Y, YUI))) {
         Y = new YUI();
@@ -3717,16 +3712,16 @@ exports.YUI = YUI;
         @example
 
             YUI.GlobalConfig = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -3747,16 +3742,16 @@ exports.YUI = YUI;
 
             // Single global var to include before YUI seed file
             YUI_config = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -3779,7 +3774,7 @@ exports.YUI = YUI;
         // These are applied after YUI.GlobalConfig and YUI_Config,
         // overriding values set in those config files if there is a
         // matching property.
-        for (; i &#x3c; l; i++) {
+        for (; i &lt; l; i++) {
             Y.applyConfig(args[i]);
         }
 
@@ -3824,7 +3819,7 @@ exports.YUI = YUI;
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">dump = function (o) { return &#x27;&#x27;+o; }</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">dump = function (o) { return ''+o; }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -3849,7 +3844,7 @@ exports.YUI = YUI;
     if (!ret) {
         throw (e || new Error(msg));
     } else {
-        Y.message(msg, &#x27;error&#x27;, &#x27;&#x27;+src); // don&#x27;t scrub this one
+        Y.message(msg, 'error', ''+src); // don't scrub this one
     }
 
     return Y;
@@ -3862,7 +3857,7 @@ if (Y.config.throwFail) {
     try {
         __exports__ = mod.fn.apply(esCompat ? undefined : mod, modArgs);
     } catch (e) {
-        Y.<span class="apidocCodeKeywordSpan">error</span>(&#x27;Attach error: &#x27; + name, e, name);
+        Y.<span class="apidocCodeKeywordSpan">error</span>('Attach error: ' + name, e, name);
         return false;
     }
 }
@@ -3882,14 +3877,14 @@ if (esCompat) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">guid = function (pre) {
-    var id = this.Env._guidp + &#x27;_&#x27; + (++this.Env._uidx);
+    var id = this.Env._guidp + '_' + (++this.Env._uidx);
     return (pre) ? (pre + id) : id;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-if (o.uniqueID &#x26;&#x26; o.nodeType &#x26;&#x26; o.nodeType !== 9) {
+if (o.uniqueID &amp;&amp; o.nodeType &amp;&amp; o.nodeType !== 9) {
     uid = o.uniqueID;
 } else {
-    uid = (typeof o === &#x27;string&#x27;) ? o : o._yuid;
+    uid = (typeof o === 'string') ? o : o._yuid;
 }
 
 if (!uid) {
@@ -3915,14 +3910,14 @@ if (!uid) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">log = function () {}</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    Y._attach([&#x27;yui-base&#x27;]);
+    Y._attach(['yui-base']);
     Y._attach(core);
 
     if (Y.Loader) {
         getLoader(Y);
     }
 
-    // Y.<span class="apidocCodeKeywordSpan">log</span>(Y.id + &#x27; initialized&#x27;, &#x27;info&#x27;, &#x27;yui&#x27;);
+    // Y.<span class="apidocCodeKeywordSpan">log</span>(Y.id + ' initialized', 'info', 'yui');
 },
 
 /**
@@ -3946,20 +3941,20 @@ whitelisted.
     <li>example usage<pre class="apidocCodePre">...
 
     //if (!loader || !loader.moduleInfo[name]) {
-    //if ((!loader || !loader.moduleInfo[name]) &#x26;&#x26; !moot) {
-    if (!moot &#x26;&#x26; name) {
-        if ((name.indexOf(&#x27;skin-&#x27;) === -1) &#x26;&#x26; (name.indexOf(&#x27;css&#x27;) === -1)) {
+    //if ((!loader || !loader.moduleInfo[name]) &amp;&amp; !moot) {
+    if (!moot &amp;&amp; name) {
+        if ((name.indexOf('skin-') === -1) &amp;&amp; (name.indexOf('css') === -1)) {
             Y.Env._missed.push(name);
             Y.Env._missed = Y.Array.dedupe(Y.Env._missed);
-            Y.<span class="apidocCodeKeywordSpan">message</span>(&#x27;NOT loaded: &#x27; + name, &#x27;warn&#x27;, &#x27;yui&#x27
+            Y.<span class="apidocCodeKeywordSpan">message</span>('NOT loaded: ' + name, 'warn', 'yui'
 ;);
         }
     }
 } else {
     done[name] = true;
-    //Don&#x27;t like this, but in case a mod was asked for once, then we fetch it
+    //Don't like this, but in case a mod was asked for once, then we fetch it
     //We need to remove it from the missed list ^davglass
-    for (j = 0; j &#x3c; Y.Env._missed.length; j++) {
+    for (j = 0; j &lt; Y.Env._missed.length; j++) {
 ...</pre></li>
     </ul>
 
@@ -3975,18 +3970,18 @@ whitelisted.
     <li>description and source-code<pre class="apidocCodePre">namespace = function () {
     var a = arguments, o, i = 0, j, d, arg;
 
-    for (; i &#x3c; a.length; i++) {
+    for (; i &lt; a.length; i++) {
         o = this; //Reset base object per argument or it will get reused from the last
         arg = a[i];
-        if (arg.indexOf(PERIOD) &#x3e; -1) { //Skip this if no &#x22;.&#x22; is present
+        if (arg.indexOf(PERIOD) &gt; -1) { //Skip this if no "." is present
             d = arg.split(PERIOD);
-            for (j = (d[0] == &#x27;YAHOO&#x27;) ? 1 : 0; j &#x3c; d.length; j++) {
+            for (j = (d[0] == 'YAHOO') ? 1 : 0; j &lt; d.length; j++) {
                 o[d[j]] = o[d[j]] || {};
                 o = o[d[j]];
             }
         } else {
             o[arg] = o[arg] || {};
-            o = o[arg]; //Reset base object to the new object so it&#x27;s returned
+            o = o[arg]; //Reset base object to the new object so it's returned
         }
     }
     return o;
@@ -3999,13 +3994,13 @@ whitelisted.
 
 // Create `YUI.your.namespace.here` as nested objects, preserving any
 // objects that already exist instead of overwriting them.
-YUI.<span class="apidocCodeKeywordSpan">namespace</span>(&#x27;your.namespace.here&#x27;);
+YUI.<span class="apidocCodeKeywordSpan">namespace</span>('your.namespace.here');
 
     When called as a method on a YUI instance, a namespace will be created on
     that instance:
 
 // Creates `Y.property.package`.
-Y.namespace(&#x27;property.package&#x27;);
+Y.namespace('property.package');
 ...</pre></li>
     </ul>
 
@@ -4034,7 +4029,7 @@ Y.namespace(&#x27;property.package&#x27;);
     the YUI instance is used instead of the module exports.
 @example
 ```
-YUI().<span class="apidocCodeKeywordSpan">require</span>([&#x27;es6-set&#x27;], function (Y, imports) {
+YUI().<span class="apidocCodeKeywordSpan">require</span>(['es6-set'], function (Y, imports) {
     var Set = imports.Set,
         set = new Set();
 });
@@ -4077,10 +4072,10 @@ require: function () {
 
     // IE generates its own unique ID for dom nodes
     // The uniqueID property of a document node returns a new ID
-    if (o.uniqueID &#x26;&#x26; o.nodeType &#x26;&#x26; o.nodeType !== 9) {
+    if (o.uniqueID &amp;&amp; o.nodeType &amp;&amp; o.nodeType !== 9) {
         uid = o.uniqueID;
     } else {
-        uid = (typeof o === &#x27;string&#x27;) ? o : o._yuid;
+        uid = (typeof o === 'string') ? o : o._yuid;
     }
 
     if (!uid) {
@@ -4179,8 +4174,8 @@ Y.constructor = YUI;
 
 
 
-var inst = require(&#x22;./index&#x22;).getInstance();
-module.exports = inst.<span class="apidocCodeKeywordSpan">use</span>(&#x22;anim&#x22;);
+var inst = require("./index").getInstance();
+module.exports = inst.<span class="apidocCodeKeywordSpan">use</span>("anim");
 ...</pre></li>
     </ul>
 
@@ -4217,10 +4212,10 @@ module.exports = inst.<span class="apidocCodeKeywordSpan">use</span>(&#x22;anim&
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">add = function (el, type, fn, capture) {
-    if (el &#x26;&#x26; el.addEventListener) {
+    if (el &amp;&amp; el.addEventListener) {
         el.addEventListener(type, fn, capture);
-    } else if (el &#x26;&#x26; el.attachEvent) {
-        el.attachEvent(&#x27;on&#x27; + type, fn);
+    } else if (el &amp;&amp; el.attachEvent) {
+        el.attachEvent('on' + type, fn);
     }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -4228,7 +4223,7 @@ Registers a YUI module and makes it available for use in a `YUI().use()` call or
 as a dependency for other modules.
 
 The easiest way to create a first-class YUI module is to use
-&#x3c;a href=&#x22;http://yui.github.com/shifter/&#x22;&#x3e;Shifter&#x3c;/a&#x3e;, the YUI component build
+&lt;a href="http://yui.github.com/shifter/"&gt;Shifter&lt;/a&gt;, the YUI component build
 tool.
 
 Shifter will automatically wrap your module code in a `YUI.<span class="apidocCodeKeywordSpan">add</span>()` call along
@@ -4236,9 +4231,9 @@ with any configuration info required for the module.
 
 @example
 
-YUI.add(&#x27;davglass&#x27;, function (Y) {
+YUI.add('davglass', function (Y) {
     Y.davglass = function () {
-        Y.log(&#x27;Dav was here!&#x27;);
+        Y.log('Dav was here!');
 ...</pre></li>
     </ul>
 
@@ -4252,11 +4247,11 @@ YUI.add(&#x27;davglass&#x27;, function (Y) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getBase = function (pattern) {
-    var nodes = (doc &#x26;&#x26; doc.getElementsByTagName(&#x27;script&#x27;)) || [],
+    var nodes = (doc &amp;&amp; doc.getElementsByTagName('script')) || [],
         path = Env.cdn, parsed,
         i, len, src;
 
-    for (i = 0, len = nodes.length; i &#x3c; len; ++i) {
+    for (i = 0, len = nodes.length; i &lt; len; ++i) {
         src = nodes[i].src;
         if (src) {
             parsed = Y.Env.parseBasePath(src, pattern);
@@ -4275,17 +4270,17 @@ YUI.add(&#x27;davglass&#x27;, function (Y) {
     YUI.Env.cssStampEl = doc.getElementById(CSS_STAMP_EL);
 }
 
-Y.config.lang = Y.config.lang || &#x27;en-US&#x27;;
+Y.config.lang = Y.config.lang || 'en-US';
 
 Y.config.base = YUI.config.base ||
-        (YUI.config.defaultBase &#x26;&#x26; YUI.config.root &#x26;&#x26; YUI.config.defaultBase + YUI.config.root) ||
+        (YUI.config.defaultBase &amp;&amp; YUI.config.root &amp;&amp; YUI.config.defaultBase + YUI.config.root) ||
         Y.Env.<span class="apidocCodeKeywordSpan">getBase</span>(Y.Env._BASE_RE);
 
-if (!filter || (!(&#x27;mindebug&#x27;).indexOf(filter))) {
-    filter = &#x27;min&#x27;;
+if (!filter || (!('mindebug').indexOf(filter))) {
+    filter = 'min';
 }
-filter = (filter) ? &#x27;-&#x27; + filter : filter;
-Y.config.loaderPath = YUI.config.loaderPath || &#x27;loader/loader&#x27; + filter + &#x27;.js&#x27;;
+filter = (filter) ? '-' + filter : filter;
+Y.config.loaderPath = YUI.config.loaderPath || 'loader/loader' + filter + '.js';
 ...</pre></li>
     </ul>
 
@@ -4312,7 +4307,7 @@ Y.config.loaderPath = YUI.config.loaderPath || &#x27;loader/loader&#x27; + filte
         // extract correct path for mixed combo urls
         // http://yuilibrary.com/projects/yui3/ticket/2528423
         if (match[1]) {
-            path += &#x27;?&#x27; + match[1];
+            path += '?' + match[1];
         }
         path = {
             filter: filter,
@@ -4322,11 +4317,11 @@ Y.config.loaderPath = YUI.config.loaderPath || &#x27;loader/loader&#x27; + filte
     return path;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var nodes = (doc &#x26;&#x26; doc.getElementsByTagName(&#x27;script&#x27;)) || [],
+var nodes = (doc &amp;&amp; doc.getElementsByTagName('script')) || [],
     path = Env.cdn, parsed,
     i, len, src;
 
-for (i = 0, len = nodes.length; i &#x3c; len; ++i) {
+for (i = 0, len = nodes.length; i &lt; len; ++i) {
     src = nodes[i].src;
     if (src) {
         parsed = Y.Env.<span class="apidocCodeKeywordSpan">parseBasePath</span>(src, pattern);
@@ -4354,13 +4349,13 @@ for (i = 0, len = nodes.length; i &#x3c; len; ++i) {
     var numberify = function(s) {
             var c = 0;
             return parseFloat(s.replace(/\./g, function() {
-                return (c++ === 1) ? &#x27;&#x27; : &#x27;.&#x27;;
+                return (c++ === 1) ? '' : '.';
             }));
         },
 
         win = Y.config.win,
 
-        nav = win &#x26;&#x26; win.navigator,
+        nav = win &amp;&amp; win.navigator,
 
         o = {
 
@@ -4384,13 +4379,13 @@ for (i = 0, len = nodes.length; i &#x3c; len; ++i) {
          * Gecko engine revision number.  Will evaluate to 1 if Gecko
          * is detected but the revision could not be found. Other browsers
          * will be 0.  Example: 1.8
-         * &#x3c;pre&#x3e;
-         * Firefox 1.0.0.4: 1.7.8   &#x3c;-- Reports 1.7
-         * Firefox 1.5.0.9: 1.8.0.9 &#x3c;-- 1.8
-         * Firefox 2.0.0.3: 1.8.1.3 &#x3c;-- 1.81
-         * Firefox 3.0   &#x3c;-- 1.9
-         * Firefox 3.5   &#x3c;-- 1.91
-         * &#x3c;/pre&#x3e;
+         * &lt;pre&gt;
+         * Firefox 1.0.0.4: 1.7.8   &lt;-- Reports 1.7
+         * Firefox 1.5.0.9: 1.8.0.9 &lt;-- 1.8
+         * Firefox 2.0.0.3: 1.8.1.3 &lt;-- 1.81
+         * Firefox 3.0   &lt;-- 1.9
+         * Firefox 3.5   &lt;-- 1.91
+         * &lt;/pre&gt;
          * @property gecko
          * @type float
          * @static
@@ -4400,23 +4395,23 @@ for (i = 0, len = nodes.length; i &#x3c; len; ++i) {
         /**
          * AppleWebKit version.  KHTML browsers that are not WebKit browsers
          * will evaluate to 1, other browsers 0.  Example: 418.9
-         * &#x3c;pre&#x3e;
-         * Safari 1.3.2 (312.6): 312.8.1 &#x3c;-- Reports 312.8 -- currently the
+         * &lt;pre&gt;
+         * Safari 1.3.2 (312.6): 312.8.1 &lt;-- Reports 312.8 -- currently the
          *                                   latest available for Mac OSX 10.3.
-         * Safari 2.0.2:         416     &#x3c;-- hasOwnProperty introduced
-         * Safari 2.0.4:         418     &#x3c;-- preventDefault fixed
-         * Safari 2.0.4 (419.3): 418.9.1 &#x3c;-- One version of Safari may run
+         * Safari 2.0.2:         416     &lt;-- hasOwnProperty introduced
+         * Safari 2.0.4:         418     &lt;-- preventDefault fixed
+         * Safari 2.0.4 (419.3): 418.9.1 &lt;-- One version of Safari may run
          *                                   different versions of webkit
-         * Safari 2.0.4 (419.3): 419     &#x3c;-- Tiger installations that have been
+         * Safari 2.0.4 (419.3): 419     &lt;-- Tiger installations that have been
          *                                   updated, but not updated
          *                                   to the latest patch.
-         * Webkit 212 nightly:   522+    &#x3c;-- Safari 3.0 precursor (with native
+         * Webkit 212 nightly:   522+    &lt;-- Safari 3.0 precursor (with native
          * SVG and many major issues fixed).
-         * Safari 3.0.4 (523.12) 523.12  &#x3c;-- First Tiger release - automatic
+         * Safari 3.0.4 (523.12) 523.12  &lt;-- First Tiger release - automatic
          * update from 2.x via the 10.4.11 OS patch.
-         * Webkit nightly 1/2008:525+    &#x3c;-- Supports DOMContentLoaded event.
+         * Webkit nightly 1/2008:525+    &lt;-- Supports DOMContentLoaded event.
          *                                   yahoo.com user agent hack removed.
-         * &#x3c;/pre&#x3e;
+         * &lt;/pre&gt;
          * http://en.wikipedia.org/wiki/Safari_version_history
          * @property webkit
          * @type float
@@ -4469,7 +4464,7 @@ for (i = 0, len = nodes.length; i &#x3c; len; ++i) {
          */
         phantomjs: 0,
         /**
-         * Detects Apple iPad&#x27;s OS version
+         * Detects Apple iPad's OS version
          * @property ipad
          * @type float
          * @static
@@ -4489,9 +4484,9 @@ Y.UA = YUI.Env.UA || YUI.Env.<span class="apidocCodeKeywordSpan">parseUA</span>(
 
 /**
 Performs a simple comparison between two version numbers, accounting for
-standard versioning logic such as the fact that &#x22;535.8&#x22; is a lower version than
-&#x22;535.24&#x22;, even though a simple numerical comparison would indicate that it&#x27;s
-greater. Also accounts for cases such as &#x22;1.1&#x22; vs. &#x22;1.1.0&#x22;, which are
+standard versioning logic such as the fact that "535.8" is a lower version than
+"535.24", even though a simple numerical comparison would indicate that it's
+greater. Also accounts for cases such as "1.1" vs. "1.1.0", which are
 considered equivalent.
 ...</pre></li>
     </ul>
@@ -4506,13 +4501,13 @@ considered equivalent.
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">remove = function (el, type, fn, capture) {
-    if (el &#x26;&#x26; el.removeEventListener) {
+    if (el &amp;&amp; el.removeEventListener) {
         // this can throw an uncaught exception in FF
         try {
             el.removeEventListener(type, fn, capture);
         } catch (ex) {}
-    } else if (el &#x26;&#x26; el.detachEvent) {
-        el.detachEvent(&#x27;on&#x27; + type, fn);
+    } else if (el &amp;&amp; el.detachEvent) {
+        el.detachEvent('on' + type, fn);
     }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -4595,8 +4590,8 @@ considered equivalent.
     // so that setting it in user configuration prevents the library from
     // using eval(). This is critical for Content Security Policy enabled
     // sites and other environments like Chrome extensions
-    if (!Y.config.hasOwnProperty(&#x27;global&#x27;)) {
-        Y.config.global = Function(&#x27;return this&#x27;)();
+    if (!Y.config.hasOwnProperty('global')) {
+        Y.config.global = Function('return this')();
     }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -4644,15 +4639,15 @@ if (l) {
 
     //Check for conditional modules (in a second+ instance) and add their requirements
     //TODO I hate this entire method, it needs to be fixed ASAP (3.5.0) ^davglass
-    for (i = 0; i &#x3c; len; i++) {
+    for (i = 0; i &lt; len; i++) {
         name = r[i];
         mod = mods[name];
         c.push(name);
-        if (loader &#x26;&#x26; loader.conditions[name]) {
+        if (loader &amp;&amp; loader.conditions[name]) {
             for (j in loader.conditions[name]) {
                 if (loader.conditions[name].hasOwnProperty(j)) {
                     def = loader.conditions[name][j];
-                    go = def &#x26;&#x26; ((def.ua &#x26;&#x26; Y.UA[def.ua]) || (def.test &#x26;&#x26; def.test(Y)));
+                    go = def &amp;&amp; ((def.ua &amp;&amp; Y.UA[def.ua]) || (def.test &amp;&amp; def.test(Y)));
                     if (go) {
                         c.push(def.name);
                     }
@@ -4663,17 +4658,17 @@ if (l) {
     r = c;
     len = r.length;
 
-    for (i = 0; i &#x3c; len; i++) {
+    for (i = 0; i &lt; len; i++) {
         if (!done[r[i]]) {
             name = r[i];
             mod = mods[name];
 
-            if (aliases &#x26;&#x26; aliases[name] &#x26;&#x26; !mod) {
+            if (aliases &amp;&amp; aliases[name] &amp;&amp; !mod) {
                 Y._attach(aliases[name]);
                 continue;
             }
             if (!mod) {
-                modInfo = loader &#x26;&#x26; loader.getModuleInfo(name);
+                modInfo = loader &amp;&amp; loader.getModuleInfo(name);
                 if (modInfo) {
                     mod = modInfo;
                     moot = true;
@@ -4681,41 +4676,41 @@ if (l) {
 
 
                 //if (!loader || !loader.moduleInfo[name]) {
-                //if ((!loader || !loader.moduleInfo[name]) &#x26;&#x26; !moot) {
-                if (!moot &#x26;&#x26; name) {
-                    if ((name.indexOf(&#x27;skin-&#x27;) === -1) &#x26;&#x26; (name.indexOf(&#x27;css&#x27;) === -1)) {
+                //if ((!loader || !loader.moduleInfo[name]) &amp;&amp; !moot) {
+                if (!moot &amp;&amp; name) {
+                    if ((name.indexOf('skin-') === -1) &amp;&amp; (name.indexOf('css') === -1)) {
                         Y.Env._missed.push(name);
                         Y.Env._missed = Y.Array.dedupe(Y.Env._missed);
-                        Y.message(&#x27;NOT loaded: &#x27; + name, &#x27;warn&#x27;, &#x27;yui&#x27;);
+                        Y.message('NOT loaded: ' + name, 'warn', 'yui');
                     }
                 }
             } else {
                 done[name] = true;
-                //Don&#x27;t like this, but in case a mod was asked for once, then we fetch it
+                //Don't like this, but in case a mod was asked for once, then we fetch it
                 //We need to remove it from the missed list ^davglass
-                for (j = 0; j &#x3c; Y.Env._missed.length; j++) {
+                for (j = 0; j &lt; Y.Env._missed.length; j++) {
                     if (Y.Env._missed[j] === name) {
-                        Y.message(&#x27;Found: &#x27; + name + &#x27; (was reported as missing earlier)&#x27;, &#x27;warn&#x27;, &#x27;yui&#x27;);
+                        Y.message('Found: ' + name + ' (was reported as missing earlier)', 'warn', 'yui');
                         Y.Env._missed.splice(j, 1);
                     }
                 }
 
                 // Optional dependencies normally work by modifying the
-                // dependency list of a module. If the dependency&#x27;s test
-                // passes it is added to the list. If not, it&#x27;s not loaded.
+                // dependency list of a module. If the dependency's test
+                // passes it is added to the list. If not, it's not loaded.
                 // This following check ensures that optional dependencies
                 // are not attached when they were already loaded into the
                 // page (when bundling for example)
-                if (loader &#x26;&#x26; !loader._canBeAttached(name)) {
+                if (loader &amp;&amp; !loader._canBeAttached(name)) {
                     return true;
                 }
 
 <span class="apidocCodeCommentSpan">                /*
-                    If it&#x27;s a temp module, we need to redo it&#x27;s requirements if it&#x27;s already loaded
-                    since it may have been loaded by another instance and it&#x27;s dependencies might
+                    If it's a temp module, we need to redo it's requirements if it's already loaded
+                    since it may have been loaded by another instance and it's dependencies might
                     have been redefined inside the fetched file.
                 */
-</span>                if (loader &#x26;&#x26; cache &#x26;&#x26; cache[name] &#x26;&#x26; cache[name].temp) {
+</span>                if (loader &amp;&amp; cache &amp;&amp; cache[name] &amp;&amp; cache[name].temp) {
                     loader.getRequires(cache[name]);
                     req = [];
                     modInfo = loader.getModuleInfo(name);
@@ -4732,20 +4727,20 @@ if (l) {
                 es ...</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-for (i = 0; i &#x3c; extras.length; i++) {
+for (i = 0; i &lt; extras.length; i++) {
     if (mods[extras[i]]) {
         core.push(extras[i]);
     }
 }
 
-Y.<span class="apidocCodeKeywordSpan">_attach</span>([&#x27;yui-base&#x27;]);
+Y.<span class="apidocCodeKeywordSpan">_attach</span>(['yui-base']);
 Y._attach(core);
 
 if (Y.Loader) {
     getLoader(Y);
 }
 
-// Y.log(Y.id + &#x27; initialized&#x27;, &#x27;info&#x27;, &#x27;yui&#x27;);
+// Y.log(Y.id + ' initialized', 'info', 'yui');
 ...</pre></li>
     </ul>
 
@@ -4764,7 +4759,7 @@ if (Y.Loader) {
     <li>example usage<pre class="apidocCodePre">...
         getLoader = function(Y, o) {
 var loader = Y.Env._loader,
-    lCore = [ &#x27;loader-base&#x27; ],
+    lCore = [ 'loader-base' ],
     G_ENV = YUI.Env,
     mods = G_ENV.mods;
 
@@ -4792,12 +4787,12 @@ if (loader) {
     <li>description and source-code<pre class="apidocCodePre">_delayCallback = function (cb, until) {
 
     var Y = this,
-        mod = [&#x27;event-base&#x27;];
+        mod = ['event-base'];
 
     until = (Y.Lang.isObject(until) ? until : { event: until });
 
-    if (until.event === &#x27;load&#x27;) {
-        mod.push(&#x27;event-synthetic&#x27;);
+    if (until.event === 'load') {
+        mod.push('event-synthetic');
     }
 
     return function() {
@@ -4858,13 +4853,13 @@ if (Y.Lang.isArray(args[0])) {
 
     if (!Env) {
         Y.Env = {
-            core: [&#x27;get&#x27;, &#x27;features&#x27;, &#x27;intl-base&#x27;, &#x27;yui-log&#x27;, &#x27;yui-log-nodejs&#x27;, &#x27;yui-later&#x27;, &#x27;loader-base&#x27;, &#x27;loader-rollup&#x27;, &#x27;loader
--yui3&#x27;],
-            loaderExtras: [&#x27;loader-rollup&#x27;, &#x27;loader-yui3&#x27;],
+            core: ['get', 'features', 'intl-base', 'yui-log', 'yui-log-nodejs', 'yui-later', 'loader-base', 'loader-rollup', 'loader
+-yui3'],
+            loaderExtras: ['loader-rollup', 'loader-yui3'],
             mods: {}, // flat module map
             versions: {}, // version module map
             base: BASE,
-            cdn: BASE + VERSION + &#x27;/&#x27;,
+            cdn: BASE + VERSION + '/',
             // bootstrapped: false,
             _idx: 0,
             _used: {},
@@ -4873,37 +4868,37 @@ if (Y.Lang.isArray(args[0])) {
             _missed: [],
             _yidx: 0,
             _uidx: 0,
-            _guidp: &#x27;y&#x27;,
+            _guidp: 'y',
             _loaded: {},
             // serviced: {},
             // Regex in English:
-            // I&#x27;ll start at the \b(yui).
-            // 1. Look in the test string for &#x22;yui&#x22; or
-            //    &#x22;yui-base&#x22; or &#x22;yui-davglass&#x22; or &#x22;yui-foobar&#x22; that comes after a word break.  That is, it
-            //    can&#x27;t match &#x22;foyui&#x22; or &#x22;i_heart_yui&#x22;. This can be anywhere in the string.
+            // I'll start at the \b(yui).
+            // 1. Look in the test string for "yui" or
+            //    "yui-base" or "yui-davglass" or "yui-foobar" that comes after a word break.  That is, it
+            //    can't match "foyui" or "i_heart_yui". This can be anywhere in the string.
             // 2. After #1 must come a forward slash followed by the string matched in #1, so
-            //    &#x22;yui-base/yui-base&#x22; or &#x22;yui-pants/yui-pants&#x22;.
-            // 3. The second occurence of the #1 token can optionally be followed by &#x22;-debug&#x22; or &#x22;-min&#x22;,
-            //    so &#x22;yui/yui-min&#x22;, &#x22;yui/yui-debug&#x22;, &#x22;yui-base/yui-base-debug&#x22;. NOT &#x22;yui/yui-tshirt&#x22;.
-            // 4. This is followed by &#x22;.js&#x22;, so &#x22;yui/yui.js&#x22;.
-            // 0. Going back to the beginning, now. If all that stuff in 1-4 comes after a &#x22;?&#x22; in the string,
-            //    then capture the junk between the LAST &#x22;&#x26;&#x22; and the string in 1-4.  So
-            //    &#x22;blah?foo/yui/yui.js&#x22; will capture &#x22;foo/&#x22; and &#x22;blah?some/thing.js&#x26;3.3.0/build/yui-davglass/yui-davglass.js&#x22;
-            //    will capture &#x22;3.3.0/build/&#x22;
+            //    "yui-base/yui-base" or "yui-pants/yui-pants".
+            // 3. The second occurence of the #1 token can optionally be followed by "-debug" or "-min",
+            //    so "yui/yui-min", "yui/yui-debug", "yui-base/yui-base-debug". NOT "yui/yui-tshirt".
+            // 4. This is followed by ".js", so "yui/yui.js".
+            // 0. Going back to the beginning, now. If all that stuff in 1-4 comes after a "?" in the string,
+            //    then capture the junk between the LAST "&amp;" and the string in 1-4.  So
+            //    "blah?foo/yui/yui.js" will capture "foo/" and "blah?some/thing.js&amp;3.3.0/build/yui-davglass/yui-davglass.js"
+            //    will capture "3.3.0/build/"
             //
             // Regex Exploded:
             // (?:\?             Find a ?
-            //   (?:[^&#x26;]*&#x26;)      followed by 0..n characters followed by an &#x26;
-            //   *               in fact, find as many sets of characters followed by a &#x26; as you can
-            //   ([^&#x26;]*)         capture the stuff after the last &#x26; in \1
-            // )?                but it&#x27;s ok if all this ?junk&#x26;more_junk stuff isn&#x27;t even there
+            //   (?:[^&amp;]*&amp;)      followed by 0..n characters followed by an &amp;
+            //   *               in fact, find as many sets of characters followed by a &amp; as you can
+            //   ([^&amp;]*)         capture the stuff after the last &amp; in \1
+            // )?                but it's ok if all this ?junk&amp;more_junk stuff isn't even there
             // \b(               after a word break find either the string
-            //    yui(?:-\w+)?   &#x22;yui&#x22; optionally followed by a -, then more characters
+            //    yui(?:-\w+)?   "yui" optionally followed by a -, then more characters
             // )                 and store the yui-* string in \2
             // \/\2              then comes a / followed by the yui-* string in \2
-            // (?:-(min|debug))? optionally followed by &#x22;-min&#x22; or &#x22;-debug&#x22;
-            // .js               and ending in &#x22;.js&#x22;
-            _BASE_RE: /(?:\?(?:[^&#x26;]*&#x26;)*([^&#x26;]*))?\b(yui(?:-\w+)?)\/\2(?:-(min|debug))?\.js/,
+            // (?:-(min|debug))? optionally followed by "-min" or "-debug"
+            // .js               and ending in ".js"
+            _BASE_RE: /(?:\?(?:[^&amp;]*&amp;)*([^&amp;]*))?\b(yui(?:-\w+)?)\/\2(?:-(min|debug))?\.js/,
             parseBasePath: function(src, pattern) {
                 var match = src.match(pattern),
                     path, filter;
@@ -4918,7 +4913,7 @@ if (Y.Lang.isArray(args[0])) {
                     // extract correct path for mixed combo urls
                     // http://yuilibrary.com/projects/yui3/ticket/2528423
                     if (match[1]) {
-                        path += &#x27;?&#x27; + match[1];
+                        path += '?' + match[1];
                     }
                     path = {
                         filter: filter,
@@ -4927,10 +4922,10 @@ if (Y.Lang.isArray(args[0])) {
                 }
                 return path;
             },
-            getBase: G_ENV &#x26;&#x26; G_ENV.getBase ...</pre></li>
+            getBase: G_ENV &amp;&amp; G_ENV.getBase ...</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 },
-gconf = (typeof YUI_config !== &#x27;undefined&#x27;) &#x26;&#x26; YUI_config;
+gconf = (typeof YUI_config !== 'undefined') &amp;&amp; YUI_config;
 
         if (!(instanceOf(Y, YUI))) {
 Y = new YUI();
@@ -4957,11 +4952,11 @@ contexts.
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">_notify = function (callback, response, args) {
-    if (!response.success &#x26;&#x26; this.config.loadErrorFn) {
+    if (!response.success &amp;&amp; this.config.loadErrorFn) {
         this.config.loadErrorFn.call(this, this, callback, response, args);
     } else if (callback) {
-        if (this.Env._missed &#x26;&#x26; this.Env._missed.length) {
-            response.msg = &#x27;Missing modules: &#x27; + this.Env._missed.join();
+        if (this.Env._missed &amp;&amp; this.Env._missed.length) {
+            response.msg = 'Missing modules: ' + this.Env._missed.join();
             response.success = false;
         }
         if (this.config.throwFail) {
@@ -4970,7 +4965,7 @@ contexts.
             try {
                 callback(this, response);
             } catch (e) {
-                this.error(&#x27;use callback error&#x27;, e, args);
+                this.error('use callback error', e, args);
             }
         }
     }
@@ -4981,7 +4976,7 @@ contexts.
 
     if (provisioned) {
         if (args.length) {
-            Y.log(&#x27;already provisioned: &#x27; + args, &#x27;info&#x27;, &#x27;yui&#x27;);
+            Y.log('already provisioned: ' + args, 'info', 'yui');
         }
         Y.<span class="apidocCodeKeywordSpan">_notify</span>(callback, ALREADY_DONE, args);
         return Y;
@@ -5010,13 +5005,13 @@ if (Y._loading) {
         extendedCore = Y.config.extendedCore || [],
         extras = Y.config.core || [].concat(YUI.Env.core).concat(extendedCore); //Clone it..
 
-    for (i = 0; i &#x3c; extras.length; i++) {
+    for (i = 0; i &lt; extras.length; i++) {
         if (mods[extras[i]]) {
             core.push(extras[i]);
         }
     }
 
-    Y._attach([&#x27;yui-base&#x27;]);
+    Y._attach(['yui-base']);
     Y._attach(core);
 
     if (Y.Loader) {
@@ -5055,7 +5050,7 @@ if (l) {
     <li>description and source-code<pre class="apidocCodePre">_use = function (args, callback) {
 
     if (!this.Array) {
-        this._attach([&#x27;yui-base&#x27;]);
+        this._attach(['yui-base']);
     }
 
     var len, loader, handleBoot,
@@ -5085,8 +5080,8 @@ if (l) {
 
             if (aliases) {
                 len = names.length;
-                for (i = 0; i &#x3c; len; i++) {
-                    if (aliases[names[i]] &#x26;&#x26; !mods[names[i]]) {
+                for (i = 0; i &lt; len; i++) {
+                    if (aliases[names[i]] &amp;&amp; !mods[names[i]]) {
                         a = [].concat(a, aliases[names[i]]);
                     } else {
                         a.push(names[i]);
@@ -5097,7 +5092,7 @@ if (l) {
 
             len = names.length;
 
-            for (i = 0; i &#x3c; len; i++) {
+            for (i = 0; i &lt; len; i++) {
                 name = names[i];
                 if (!skip) {
                     r.push(name);
@@ -5117,7 +5112,7 @@ if (l) {
                     req = m.details.requires;
                     use = m.details.use;
                 } else {
-                    // CSS files don&#x27;t register themselves, see if it has
+                    // CSS files don't register themselves, see if it has
                     // been loaded
                     if (!G_ENV._loaded[VERSION][name]) {
                         missing.push(name);
@@ -5127,12 +5122,12 @@ if (l) {
                 }
 
                 // make sure requirements are attached
-                if (req &#x26;&#x26; req.length) {
+                if (req &amp;&amp; req.length) {
                     process(req);
                 }
 
                 // make sure we grab the submodule dependencies too
-                if (use &#x26;&#x26; use.length) {
+                if (use &amp;&amp; use.length) {
                     process(use, 1);
                 }
             }
@@ -5142,7 +5137,7 @@ if (l) {
         handleLoader = function(fromLoader) {
             var response = fromLoader || {
                     success: true,
-                    msg: &#x27;not dynamic&#x27;
+                    msg: 'not dynamic'
                 },
                 redo, origMissing,
                 ret = true,
@@ -5164,7 +5159,7 @@ if (l) {
                 }
             }
 
-            if (redo &#x26;&#x26; data) {
+            if (redo &amp;&amp; data) {
                 Y._loading = true;
                 Y._use(missing, function() {
                     if (Y._attach(data)) {
@@ -5180,15 +5175,15 @@ if (l) {
                 }
             }
 
-            if (Y._useQueue &#x26;&#x26; Y._useQueue.size() &#x26;&#x26; !Y._loading) {
+            if (Y._useQueue &amp;&amp; Y._useQueue.size() &amp;&amp; !Y._loading) {
                 Y._use.apply(Y, Y._useQueue.next());
             }
 
         };
 
 
-    // YUI().use(&#x27;*&#x27;); // bind everything available
-    if (firstArg === &#x27;*&#x27;) {
+    // YUI().use('*'); // bind everything available
+    if (firstArg === '*') {
         args = [];
         for (i in mods) {
             if (mods.hasOwnProperty(i)) {
@@ -5202,20 +5197,20 @@ if (l) {
         return Y;
     }
 
-    if ((mods.loader || mods[&#x27;loader- ...</pre></li>
+    if ((mods.loader || mods['loader- ...</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    mod.push(&#x27;event-synthetic&#x27;);
+    mod.push('event-synthetic');
 }
 
-Y.log(&#x27;Delaying use callback until: &#x27; + until.event, &#x27;info&#x27;, &#x27;yui&#x27;);
+Y.log('Delaying use callback until: ' + until.event, 'info', 'yui');
 return function() {
-    Y.log(&#x27;Use callback fired, waiting on delay&#x27;, &#x27;info&#x27;, &#x27;yui&#x27;);
+    Y.log('Use callback fired, waiting on delay', 'info', 'yui');
     var args = arguments;
     Y.<span class="apidocCodeKeywordSpan">_use</span>(mod, function() {
-        Y.log(&#x27;Delayed use wrapper callback after dependencies&#x27;, &#x27;info&#x27;, &#x27;yui&#x27;);
+        Y.log('Delayed use wrapper callback after dependencies', 'info', 'yui');
         Y.on(until.event, function() {
             args[1].delayUntil = until.event;
-            Y.log(&#x27;Delayed use callback done after &#x27; + until.event, &#x27;info&#x27;, &#x27;yui&#x27;);
+            Y.log('Delayed use callback done after ' + until.event, 'info', 'yui');
             cb.apply(Y, args);
         }, until.args);
     });
@@ -5240,7 +5235,7 @@ return function() {
             version: version,
             details: details
         },
-        //Instance hash so we don&#x27;t apply it to the same instance twice
+        //Instance hash so we don't apply it to the same instance twice
         applied = {},
         loader, inst, modInfo,
         i, versions = env.versions;
@@ -5272,7 +5267,7 @@ Registers a YUI module and makes it available for use in a `YUI().use()` call or
 as a dependency for other modules.
 
 The easiest way to create a first-class YUI module is to use
-&#x3c;a href=&#x22;http://yui.github.com/shifter/&#x22;&#x3e;Shifter&#x3c;/a&#x3e;, the YUI component build
+&lt;a href="http://yui.github.com/shifter/"&gt;Shifter&lt;/a&gt;, the YUI component build
 tool.
 
 Shifter will automatically wrap your module code in a `YUI.<span class="apidocCodeKeywordSpan">add</span>()` call along
@@ -5280,9 +5275,9 @@ with any configuration info required for the module.
 
 @example
 
-YUI.add(&#x27;davglass&#x27;, function (Y) {
+YUI.add('davglass', function (Y) {
     Y.davglass = function () {
-        Y.log(&#x27;Dav was here!&#x27;);
+        Y.log('Dav was here!');
 ...</pre></li>
     </ul>
 
@@ -5311,16 +5306,16 @@ YUI.add(&#x27;davglass&#x27;, function (Y) {
     for (name in o) {
         if (o.hasOwnProperty(name)) {
             attr = o[name];
-            if (mods &#x26;&#x26; name == &#x27;modules&#x27;) {
+            if (mods &amp;&amp; name == 'modules') {
                 clobber(mods, attr);
-            } else if (aliases &#x26;&#x26; name == &#x27;aliases&#x27;) {
+            } else if (aliases &amp;&amp; name == 'aliases') {
                 clobber(aliases, attr);
-            } else if (groups &#x26;&#x26; name == &#x27;groups&#x27;) {
+            } else if (groups &amp;&amp; name == 'groups') {
                 clobber(groups, attr);
-            } else if (name == &#x27;win&#x27;) {
-                config[name] = (attr &#x26;&#x26; attr.contentWindow) || attr;
+            } else if (name == 'win') {
+                config[name] = (attr &amp;&amp; attr.contentWindow) || attr;
                 config.doc = config[name] ? config[name].document : null;
-            } else if (name == &#x27;_yuid&#x27;) {
+            } else if (name == '_yuid') {
                 // preserve the guid
             } else {
                 config[name] = attr;
@@ -5340,8 +5335,8 @@ YUI.add(&#x27;davglass&#x27;, function (Y) {
 
 
 exports.path = function() {   return __dirname;};
-var YUI = require(&#x22;./yui-nodejs/yui-nodejs-debug&#x22;).YUI;
-YUI.<span class="apidocCodeKeywordSpan">applyConfig</span>({ debug: true, filter: &#x22;debug&#x22; });
+var YUI = require("./yui-nodejs/yui-nodejs-debug").YUI;
+YUI.<span class="apidocCodeKeywordSpan">applyConfig</span>({ debug: true, filter: "debug" });
 exports.YUI = YUI;
 ...</pre></li>
     </ul>
@@ -5357,21 +5352,21 @@ exports.YUI = YUI;
     <ul>
     <li>description and source-code<pre class="apidocCodePre">applyTo = function (id, method, args) {
     if (!(method in APPLY_TO_AUTH)) {
-        this.log(method + &#x27;: applyTo not allowed&#x27;, &#x27;warn&#x27;, &#x27;yui&#x27;);
+        this.log(method + ': applyTo not allowed', 'warn', 'yui');
         return null;
     }
 
     var instance = instances[id], nest, m, i;
     if (instance) {
-        nest = method.split(&#x27;.&#x27;);
+        nest = method.split('.');
         m = instance;
-        for (i = 0; i &#x3c; nest.length; i = i + 1) {
+        for (i = 0; i &lt; nest.length; i = i + 1) {
             m = m[nest[i]];
             if (!m) {
-                this.log(&#x27;applyTo not found: &#x27; + method, &#x27;warn&#x27;, &#x27;yui&#x27;);
+                this.log('applyTo not found: ' + method, 'warn', 'yui');
             }
         }
-        return m &#x26;&#x26; m.apply(instance, args);
+        return m &amp;&amp; m.apply(instance, args);
     }
 
     return null;
@@ -5409,7 +5404,7 @@ exports.YUI = YUI;
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">dump = function (o) { return &#x27;&#x27;+o; }</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">dump = function (o) { return ''+o; }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -5434,7 +5429,7 @@ exports.YUI = YUI;
     if (!ret) {
         throw (e || new Error(msg));
     } else {
-        Y.message(msg, &#x27;error&#x27;, &#x27;&#x27;+src); // don&#x27;t scrub this one
+        Y.message(msg, 'error', ''+src); // don't scrub this one
     }
 
     return Y;
@@ -5447,7 +5442,7 @@ if (Y.config.throwFail) {
     try {
         __exports__ = mod.fn.apply(esCompat ? undefined : mod, modArgs);
     } catch (e) {
-        Y.<span class="apidocCodeKeywordSpan">error</span>(&#x27;Attach error: &#x27; + name, e, name);
+        Y.<span class="apidocCodeKeywordSpan">error</span>('Attach error: ' + name, e, name);
         return false;
     }
 }
@@ -5467,14 +5462,14 @@ if (esCompat) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">guid = function (pre) {
-    var id = this.Env._guidp + &#x27;_&#x27; + (++this.Env._uidx);
+    var id = this.Env._guidp + '_' + (++this.Env._uidx);
     return (pre) ? (pre + id) : id;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-if (o.uniqueID &#x26;&#x26; o.nodeType &#x26;&#x26; o.nodeType !== 9) {
+if (o.uniqueID &amp;&amp; o.nodeType &amp;&amp; o.nodeType !== 9) {
     uid = o.uniqueID;
 } else {
-    uid = (typeof o === &#x27;string&#x27;) ? o : o._yuid;
+    uid = (typeof o === 'string') ? o : o._yuid;
 }
 
 if (!uid) {
@@ -5500,14 +5495,14 @@ if (!uid) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">log = function () {}</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    Y._attach([&#x27;yui-base&#x27;]);
+    Y._attach(['yui-base']);
     Y._attach(core);
 
     if (Y.Loader) {
         getLoader(Y);
     }
 
-    // Y.<span class="apidocCodeKeywordSpan">log</span>(Y.id + &#x27; initialized&#x27;, &#x27;info&#x27;, &#x27;yui&#x27;);
+    // Y.<span class="apidocCodeKeywordSpan">log</span>(Y.id + ' initialized', 'info', 'yui');
 },
 
 /**
@@ -5531,20 +5526,20 @@ whitelisted.
     <li>example usage<pre class="apidocCodePre">...
 
     //if (!loader || !loader.moduleInfo[name]) {
-    //if ((!loader || !loader.moduleInfo[name]) &#x26;&#x26; !moot) {
-    if (!moot &#x26;&#x26; name) {
-        if ((name.indexOf(&#x27;skin-&#x27;) === -1) &#x26;&#x26; (name.indexOf(&#x27;css&#x27;) === -1)) {
+    //if ((!loader || !loader.moduleInfo[name]) &amp;&amp; !moot) {
+    if (!moot &amp;&amp; name) {
+        if ((name.indexOf('skin-') === -1) &amp;&amp; (name.indexOf('css') === -1)) {
             Y.Env._missed.push(name);
             Y.Env._missed = Y.Array.dedupe(Y.Env._missed);
-            Y.<span class="apidocCodeKeywordSpan">message</span>(&#x27;NOT loaded: &#x27; + name, &#x27;warn&#x27;, &#x27;yui&#x27
+            Y.<span class="apidocCodeKeywordSpan">message</span>('NOT loaded: ' + name, 'warn', 'yui'
 ;);
         }
     }
 } else {
     done[name] = true;
-    //Don&#x27;t like this, but in case a mod was asked for once, then we fetch it
+    //Don't like this, but in case a mod was asked for once, then we fetch it
     //We need to remove it from the missed list ^davglass
-    for (j = 0; j &#x3c; Y.Env._missed.length; j++) {
+    for (j = 0; j &lt; Y.Env._missed.length; j++) {
 ...</pre></li>
     </ul>
 
@@ -5560,18 +5555,18 @@ whitelisted.
     <li>description and source-code<pre class="apidocCodePre">namespace = function () {
     var a = arguments, o, i = 0, j, d, arg;
 
-    for (; i &#x3c; a.length; i++) {
+    for (; i &lt; a.length; i++) {
         o = this; //Reset base object per argument or it will get reused from the last
         arg = a[i];
-        if (arg.indexOf(PERIOD) &#x3e; -1) { //Skip this if no &#x22;.&#x22; is present
+        if (arg.indexOf(PERIOD) &gt; -1) { //Skip this if no "." is present
             d = arg.split(PERIOD);
-            for (j = (d[0] == &#x27;YAHOO&#x27;) ? 1 : 0; j &#x3c; d.length; j++) {
+            for (j = (d[0] == 'YAHOO') ? 1 : 0; j &lt; d.length; j++) {
                 o[d[j]] = o[d[j]] || {};
                 o = o[d[j]];
             }
         } else {
             o[arg] = o[arg] || {};
-            o = o[arg]; //Reset base object to the new object so it&#x27;s returned
+            o = o[arg]; //Reset base object to the new object so it's returned
         }
     }
     return o;
@@ -5584,13 +5579,13 @@ whitelisted.
 
 // Create `YUI.your.namespace.here` as nested objects, preserving any
 // objects that already exist instead of overwriting them.
-YUI.<span class="apidocCodeKeywordSpan">namespace</span>(&#x27;your.namespace.here&#x27;);
+YUI.<span class="apidocCodeKeywordSpan">namespace</span>('your.namespace.here');
 
     When called as a method on a YUI instance, a namespace will be created on
     that instance:
 
 // Creates `Y.property.package`.
-Y.namespace(&#x27;property.package&#x27;);
+Y.namespace('property.package');
 ...</pre></li>
     </ul>
 
@@ -5607,18 +5602,18 @@ Y.namespace(&#x27;property.package&#x27;);
     var args = SLICE.call(arguments),
         callback;
 
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         callback = args.pop();
 
         // only add the callback if one was provided
-        // YUI().require(&#x27;foo&#x27;); is valid
+        // YUI().require('foo'); is valid
         args.push(function (Y) {
             var i, length = args.length,
                 exported = Y.Env._exported,
                 __imports__ = {};
 
             // Get only the imports requested as arguments
-            for (i = 0; i &#x3c; length; i++) {
+            for (i = 0; i &lt; length; i++) {
                 if (exported.hasOwnProperty(args[i])) {
                     __imports__[args[i]] = exported[args[i]];
                 }
@@ -5651,7 +5646,7 @@ Y.namespace(&#x27;property.package&#x27;);
     the YUI instance is used instead of the module exports.
 @example
 ```
-YUI().<span class="apidocCodeKeywordSpan">require</span>([&#x27;es6-set&#x27;], function (Y, imports) {
+YUI().<span class="apidocCodeKeywordSpan">require</span>(['es6-set'], function (Y, imports) {
     var Set = imports.Set,
         set = new Set();
 });
@@ -5679,10 +5674,10 @@ require: function () {
 
     // IE generates its own unique ID for dom nodes
     // The uniqueID property of a document node returns a new ID
-    if (o.uniqueID &#x26;&#x26; o.nodeType &#x26;&#x26; o.nodeType !== 9) {
+    if (o.uniqueID &amp;&amp; o.nodeType &amp;&amp; o.nodeType !== 9) {
         uid = o.uniqueID;
     } else {
-        uid = (typeof o === &#x27;string&#x27;) ? o : o._yuid;
+        uid = (typeof o === 'string') ? o : o._yuid;
     }
 
     if (!uid) {
@@ -5781,8 +5776,8 @@ Y.constructor = YUI;
 
 
 
-var inst = require(&#x22;./index&#x22;).getInstance();
-module.exports = inst.<span class="apidocCodeKeywordSpan">use</span>(&#x22;anim&#x22;);
+var inst = require("./index").getInstance();
+module.exports = inst.<span class="apidocCodeKeywordSpan">use</span>("anim");
 ...</pre></li>
     </ul>
 
@@ -5816,7 +5811,7 @@ module.exports = inst.<span class="apidocCodeKeywordSpan">use</span>(&#x22;anim&
     the YUI instance is used instead of the module exports.
 @example
 ```
-YUI().<span class="apidocCodeKeywordSpan">require</span>([&#x27;es6-set&#x27;], function (Y, imports) {
+YUI().<span class="apidocCodeKeywordSpan">require</span>(['es6-set'], function (Y, imports) {
     var Set = imports.Set,
         set = new Set();
 });
@@ -5841,11 +5836,11 @@ require: function () {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 var loader = new Y.Loader({
-    filter: &#x27;debug&#x27;,
-    base: &#x27;../../&#x27;,
-    root: &#x27;build/&#x27;,
+    filter: 'debug',
+    base: '../../',
+    root: 'build/',
     combine: true,
-    require: [&#x27;node&#x27;, &#x27;dd&#x27;, &#x27;console&#x27;]
+    require: ['node', 'dd', 'console']
 });
 var out = loader.<span class="apidocCodeKeywordSpan">resolve</span>(true);
 
@@ -5932,7 +5927,7 @@ YUI_config.doBeforeLoader = function (config) {
         } catch (ex) {
             result = [];
 
-            for (len = thing.length; startIndex &#x3c; len; ++startIndex) {
+            for (len = thing.length; startIndex &lt; len; ++startIndex) {
                 result.push(thing[startIndex]);
             }
 
@@ -5951,7 +5946,7 @@ Provides utility methods for working with arrays. Additional array helpers can
 be found in the `collection` and `array-extras` modules.
 
 `Y.<span class="apidocCodeKeywordSpan">Array</span>(thing)` returns a native array created from _thing_. Depending on
-_thing_&#x27;s type, one of the following will happen:
+_thing_'s type, one of the following will happen:
 
 * Arrays are returned unmodified unless a non-zero _startIndex_ is
   specified.
@@ -6284,7 +6279,7 @@ prototype)}</pre></li>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function l(t){return t.type!==&#x22;pie&#x22;?new e.CartesianChart(t):new e.PieChart(t)}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">function l(t){return t.type!=="pie"?new e.CartesianChart(t):new e.PieChart(t)}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -6376,7 +6371,7 @@ prototype)}</pre></li>
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">CustomEvent = function (t, n){this._kds=e.CustomEvent.keepDeprecatedSubs,this.id=e.guid(),this.type=t,this.silent=this.logSystem=t===c,this._kds
-&#x26;&#x26;(this.subscribers={},this.afters={}),n&#x26;&#x26;h(this,n,!0)}</pre></li>
+&amp;&amp;(this.subscribers={},this.afters={}),n&amp;&amp;h(this,n,!0)}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -6428,19 +6423,19 @@ prototype)}</pre></li>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">EditorSelection = function (t){var n,r,i,s,o,u,a,f=0,l,c,h=e.EditorSelection.ROOT;e.config.win.getSelection&#x26;&#x26;(!e.UA.ie||e.UA.ie&#x3c;9||e.UA.ie&#x3e;10)?n=e
-.config.win.getSelection():e.config.doc.selection&#x26;&#x26;(n=e.config.doc.selection.createRange()),this._selection=n;if(!n)return!1;if(
-n.pasteHTML){this.isCollapsed=n.compareEndPoints(&#x22;StartToEnd&#x22;,n)?!1:!0;if(this.isCollapsed){this.anchorNode=this.focusNode=e.one
-(n.parentElement()),t&#x26;&#x26;(i=e.config.doc.elementFromPoint(t.clientX,t.clientY)),o=n.duplicate();if(!i){r=n.parentElement(),s=r.childNodes
-;for(u=0;u&#x3c;s.length;u++)o.inRange(n)&#x26;&#x26;(i||(i=s[u]))}this.ieNode=i,i&#x26;&#x26;(i.nodeType!==3&#x26;&#x26;(i.firstChild&#x26;&#x26;(i=i.firstChild),h.compareTo
-(i)&#x26;&#x26;i.firstChild&#x26;&#x26;(i=i.firstChild)),this.anchorNode=this.focusNode=e.EditorSelection.resolve(i),o.moveToElementText(n.parentElement
-()),a=n.compareEndPoints(&#x22;StartToStart&#x22;,o),a&#x26;&#x26;(f=this.getEditorOffset(h),n.move(&#x22;character&#x22;,-f)),this.anchorOffset=this.focusOffset
-=f,this.anchorTextNode=this.focusTextNode=e.one(i))}else n.htmlText&#x26;&#x26;n.htmlText!==&#x22;&#x22;&#x26;&#x26;(l=e.Node.create(n.htmlText),l&#x26;&#x26;l.get(&#x22;id&#x22;)?(
-c=l.get(&#x22;id&#x22;),this.anchorNode=this.focusNode=e.one(&#x22;#&#x22;+c)):l&#x26;&#x26;(l=l.get(&#x22;childNodes&#x22;),this.anchorNode=this.focusNode=l.item(0)))}
+    <li>description and source-code<pre class="apidocCodePre">EditorSelection = function (t){var n,r,i,s,o,u,a,f=0,l,c,h=e.EditorSelection.ROOT;e.config.win.getSelection&amp;&amp;(!e.UA.ie||e.UA.ie&lt;9||e.UA.ie&gt;10)?n=e
+.config.win.getSelection():e.config.doc.selection&amp;&amp;(n=e.config.doc.selection.createRange()),this._selection=n;if(!n)return!1;if(
+n.pasteHTML){this.isCollapsed=n.compareEndPoints("StartToEnd",n)?!1:!0;if(this.isCollapsed){this.anchorNode=this.focusNode=e.one
+(n.parentElement()),t&amp;&amp;(i=e.config.doc.elementFromPoint(t.clientX,t.clientY)),o=n.duplicate();if(!i){r=n.parentElement(),s=r.childNodes
+;for(u=0;u&lt;s.length;u++)o.inRange(n)&amp;&amp;(i||(i=s[u]))}this.ieNode=i,i&amp;&amp;(i.nodeType!==3&amp;&amp;(i.firstChild&amp;&amp;(i=i.firstChild),h.compareTo
+(i)&amp;&amp;i.firstChild&amp;&amp;(i=i.firstChild)),this.anchorNode=this.focusNode=e.EditorSelection.resolve(i),o.moveToElementText(n.parentElement
+()),a=n.compareEndPoints("StartToStart",o),a&amp;&amp;(f=this.getEditorOffset(h),n.move("character",-f)),this.anchorOffset=this.focusOffset
+=f,this.anchorTextNode=this.focusTextNode=e.one(i))}else n.htmlText&amp;&amp;n.htmlText!==""&amp;&amp;(l=e.Node.create(n.htmlText),l&amp;&amp;l.get("id")?(
+c=l.get("id"),this.anchorNode=this.focusNode=e.one("#"+c)):l&amp;&amp;(l=l.get("childNodes"),this.anchorNode=this.focusNode=l.item(0)))}
 else this.isCollapsed=n.isCollapsed,this.anchorNode=e.EditorSelection.resolve(n.anchorNode),this.focusNode=e.EditorSelection.resolve
 (n.focusNode),this.anchorOffset=n.anchorOffset,this.focusOffset=n.focusOffset,this.anchorTextNode=e.one(n.anchorNode||this.anchorNode
 ),this.focusTextNode=e.one(n.focusNode||this.focusNode);e.Lang.isString(n.text)?this.text=n.text:n.toString?this.text=n.toString
-():this.text=&#x22;&#x22;}</pre></li>
+():this.text=""}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -6481,7 +6476,7 @@ else this.isCollapsed=n.isCollapsed,this.anchorNode=e.EditorSelection.resolve(n.
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">EventTarget = function (t){var n=this._yuievt,r;n||(n=this._yuievt={events:{},targets:null,config:{host:this,context:this},chain:e.config.chain
-}),r=n.config,t&#x26;&#x26;(h(r,t,!0),t.chain!==undefined&#x26;&#x26;(n.chain=t.chain),t.prefix&#x26;&#x26;(r.prefix=t.prefix))}</pre></li>
+}),r=n.config,t&amp;&amp;(h(r,t,!0),t.chain!==undefined&amp;&amp;(n.chain=t.chain),t.prefix&amp;&amp;(r.prefix=t.prefix))}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -6547,8 +6542,8 @@ else this.isCollapsed=n.isCollapsed,this.anchorNode=e.EditorSelection.resolve(n.
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">GraphicBase = function (t){var n=this,r=e.Plugin&#x26;&#x26;e.Plugin.Host;n._initPlugins&#x26;&#x26;r&#x26;&#x26;r.call(n),n.name=n.constructor.NAME,n._eventPrefix=n.constructor
-.EVENT_PREFIX||n.constructor.NAME,c.call(n),n.addAttrs(t),n.init.apply(this,arguments),n._initPlugins&#x26;&#x26;n._initPlugins(t),n.initialized
+    <li>description and source-code<pre class="apidocCodePre">GraphicBase = function (t){var n=this,r=e.Plugin&amp;&amp;e.Plugin.Host;n._initPlugins&amp;&amp;r&amp;&amp;r.call(n),n.name=n.constructor.NAME,n._eventPrefix=n.constructor
+.EVENT_PREFIX||n.constructor.NAME,c.call(n),n.addAttrs(t),n.init.apply(this,arguments),n._initPlugins&amp;&amp;n._initPlugins(t),n.initialized
 =!0}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6588,7 +6583,7 @@ else this.isCollapsed=n.isCollapsed,this.anchorNode=e.EditorSelection.resolve(n.
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function o(t){var n=this;n._uid=&#x22;io:&#x22;+s++,n._init(t),e.io._map[n._uid]=n}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">function o(t){var n=this;n._uid="io:"+s++,n._init(t),e.io._map[n._uid]=n}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -6753,17 +6748,17 @@ else this.isCollapsed=n.isCollapsed,this.anchorNode=e.EditorSelection.resolve(n.
      * Base path for language packs.
      */
     // self.langBase = Y.Env.meta.langBase;
-    // self.lang = &#x22;&#x22;;
+    // self.lang = "";
 
     /**
      * If configured, the loader will attempt to use the combo
      * service for YUI resources and configured external resources.
      * @property combine
      * @type boolean
-     * @default true if a base dir isn&#x27;t in the config
+     * @default true if a base dir isn't in the config
      */
-    self.combine = o.base &#x26;&#x26;
-        (o.base.indexOf(self.comboBase.substr(0, 20)) &#x3e; -1);
+    self.combine = o.base &amp;&amp;
+        (o.base.indexOf(self.comboBase.substr(0, 20)) &gt; -1);
 
     /**
     * The default seperator to use between files in a combo URL
@@ -6771,7 +6766,7 @@ else this.isCollapsed=n.isCollapsed,this.anchorNode=e.EditorSelection.resolve(n.
     * @type {String}
     * @default Ampersand
     */
-    self.comboSep = &#x27;&#x26;&#x27;;
+    self.comboSep = '&amp;';
     /**
      * Max url length for combo urls.  The default is 1024. This is the URL
      * limit for the Yahoo! hosted combo servers.  If consuming
@@ -6815,7 +6810,7 @@ else this.isCollapsed=n.isCollapsed,this.anchorNode=e.EditorSelection.resolve(n.
     loader = new Y.<span class="apidocCodeKeywordSpan">Loader</span>(Y.config);
     Y.Env._loader = loader;
 }
-if (mods &#x26;&#x26; mods.loader) {
+if (mods &amp;&amp; mods.loader) {
     lCore = [].concat(lCore, YUI.Env.loaderExtras);
 }
 YUI.Env.core = Y.Array.dedupe([].concat(YUI.Env.core, lCore));
@@ -6924,8 +6919,8 @@ YUI.Env.core = Y.Array.dedupe([].concat(YUI.Env.core, lCore));
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Object = function (obj) {
     // We currently wrap the native Object.create instead of simply aliasing it
-    // to ensure consistency with our fallback shim, which currently doesn&#x27;t
-    // support Object.create()&#x27;s second argument (properties). Once we have a
+    // to ensure consistency with our fallback shim, which currently doesn't
+    // support Object.create()'s second argument (properties). Once we have a
     // safe fallback for the properties arg, we can stop wrapping
     // Object.create().
     return Object.create(obj);
@@ -7366,7 +7361,7 @@ if (Y._loading) {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function n(t, n){this.defaults=n,this.engine=t||e.Template.Micro,this.engine||e.error(&#x22;No template engine loaded.&#x22;)}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">function n(t, n){this.defaults=n,this.engine=t||e.Template.Micro,this.engine||e.error("No template engine loaded.")}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -7445,7 +7440,7 @@ if (Y._loading) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function R(e){var t=this,n,r,i=t.constructor;t._strs={},t._cssPrefix=i.CSS_PREFIX||s(i.NAME.toLowerCase()),e=e||{},R.superclass.
-constructor.call(t,e),r=t.get(T),r&#x26;&#x26;(r!==P&#x26;&#x26;(n=r),t.render(n))}</pre></li>
+constructor.call(t,e),r=t.get(T),r&amp;&amp;(r!==P&amp;&amp;(n=r),t.render(n))}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -7497,8 +7492,8 @@ constructor.call(t,e),r=t.get(T),r&#x26;&#x26;(r!==P&#x26;&#x26;(n=r),t.render(n
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">_monitor = function (e, t, n){var r,i,s;if(t){typeof t==&#x22;string&#x22;?(s=t,i=this.getEvent(t,!0)):(i=t,s=t.type);if(this._yuievt.config.monitored&#x26;&#x26;(!
-i||i.monitored)||i&#x26;&#x26;i.monitored)r=s+&#x22;_&#x22;+e,n.monitored=e,this.fire.call(this,r,n)}}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">_monitor = function (e, t, n){var r,i,s;if(t){typeof t=="string"?(s=t,i=this.getEvent(t,!0)):(i=t,s=t.type);if(this._yuievt.config.monitored&amp;&amp;(!
+i||i.monitored)||i&amp;&amp;i.monitored)r=s+"_"+e,n.monitored=e,this.fire.call(this,r,n)}}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -7511,8 +7506,8 @@ i||i.monitored)||i&#x26;&#x26;i.monitored)r=s+&#x22;_&#x22;+e,n.monitored=e,this
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">_publish = function (t, n, r){var i,s=this._yuievt,o=s.config,u=o.host,a=o.context,f=s.events;return i=f[t],(o.monitored&#x26;&#x26;!i||i&#x26;&#x26;i.monitored)&#x26;&#x26;
-this._monitor(&#x22;publish&#x22;,t,{args:arguments}),i||(i=f[t]=new e.CustomEvent(t,n),n||(i.host=u,i.context=a)),r&#x26;&#x26;h(i,r,!0),i}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">_publish = function (t, n, r){var i,s=this._yuievt,o=s.config,u=o.host,a=o.context,f=s.events;return i=f[t],(o.monitored&amp;&amp;!i||i&amp;&amp;i.monitored)&amp;&amp;
+this._monitor("publish",t,{args:arguments}),i||(i=f[t]=new e.CustomEvent(t,n),n||(i.host=u,i.context=a)),r&amp;&amp;h(i,r,!0),i}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -7525,8 +7520,8 @@ this._monitor(&#x22;publish&#x22;,t,{args:arguments}),i||(i=f[t]=new e.CustomEve
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">after = function (t, n){var r=f.call(arguments,0);switch(p.type(t)){case&#x22;function&#x22;:return e.Do.after.apply(e.Do,arguments);case&#x22;array&#x22;:case
-&#x22;object&#x22;:r[0]._after=!0;break;default:r[0]=m+t}return this.on.apply(this,r)}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">after = function (t, n){var r=f.call(arguments,0);switch(p.type(t)){case"function":return e.Do.after.apply(e.Do,arguments);case"array":case
+"object":r[0]._after=!0;break;default:r[0]=m+t}return this.on.apply(this,r)}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -7552,10 +7547,10 @@ this._monitor(&#x22;publish&#x22;,t,{args:arguments}),i||(i=f[t]=new e.CustomEve
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">augment = function (t, n, r, i, s){var a=t.prototype,f=a&#x26;&#x26;n,l=n.prototype,c=a||t,h,p,d,v,m;return s=s?e.Array(s):[],f&#x26;&#x26;(p={},d={},v={},h=function
-(e,t){if(r||!(t in a))u.call(e)===&#x22;[object Function]&#x22;?(v[t]=e,p[t]=d[t]=function(){return m(this,e,arguments)}):p[t]=e},m=function
-(e,t,r){for(var i in v)o.call(v,i)&#x26;&#x26;e[i]===d[i]&#x26;&#x26;(e[i]=v[i]);return n.apply(e,s),t.apply(e,r)},i?e.Array.each(i,function(e){e in
- l&#x26;&#x26;h(l[e],e)}):e.Object.each(l,h,null,!0)),e.mix(c,p||l,r,i),f||n.apply(c,s),t}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">augment = function (t, n, r, i, s){var a=t.prototype,f=a&amp;&amp;n,l=n.prototype,c=a||t,h,p,d,v,m;return s=s?e.Array(s):[],f&amp;&amp;(p={},d={},v={},h=function
+(e,t){if(r||!(t in a))u.call(e)==="[object Function]"?(v[t]=e,p[t]=d[t]=function(){return m(this,e,arguments)}):p[t]=e},m=function
+(e,t,r){for(var i in v)o.call(v,i)&amp;&amp;e[i]===d[i]&amp;&amp;(e[i]=v[i]);return n.apply(e,s),t.apply(e,r)},i?e.Array.each(i,function(e){e in
+ l&amp;&amp;h(l[e],e)}):e.Object.each(l,h,null,!0)),e.mix(c,p||l,r,i),f||n.apply(c,s),t}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -7582,7 +7577,7 @@ this._monitor(&#x22;publish&#x22;,t,{args:arguments}),i||(i=f[t]=new e.CustomEve
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">bind = function (t, r){var i=arguments.length&#x3e;2?e.Array(arguments,2,!0):null;return function(){var s=n.isString(t)?r[t]:t,o=i?i.concat(e
+    <li>description and source-code<pre class="apidocCodePre">bind = function (t, r){var i=arguments.length&gt;2?e.Array(arguments,2,!0):null;return function(){var s=n.isString(t)?r[t]:t,o=i?i.concat(e
 .Array(arguments,0,!0)):arguments;return s.apply(r||s,o)}}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -7601,12 +7596,12 @@ this._monitor(&#x22;publish&#x22;,t,{args:arguments}),i||(i=f[t]=new e.CustomEve
 </span>    cache || (cache = {});
 
     return function (arg) {
-        var key = arguments.length &#x3e; 1 ?
+        var key = arguments.length &gt; 1 ?
                 Array.prototype.join.call(arguments, CACHED_DELIMITER) :
                 String(arg);
 
         /*jshint eqeqeq: false*/
-        if (!(key in cache) || (refetch &#x26;&#x26; cache[key] == refetch)) {
+        if (!(key in cache) || (refetch &amp;&amp; cache[key] == refetch)) {
             cache[key] = source.apply(source, arguments);
         }
 
@@ -7626,9 +7621,9 @@ this._monitor(&#x22;publish&#x22;,t,{args:arguments}),i||(i=f[t]=new e.CustomEve
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">clone = function (t, r, i, o, u, a){var f,l,c;if(!n.isObject(t)||e.instanceOf(t,YUI)||t.addEventListener||t.attachEvent)return t;l=a||{};switch
-(n.type(t)){case&#x22;date&#x22;:return new Date(t);case&#x22;regexp&#x22;:return t;case&#x22;function&#x22;:return t;case&#x22;array&#x22;:f=[];break;default:if(t[s])return
- l[t[s]];c=e.guid(),f=r?{}:e.Object(t),t[s]=c,l[c]=t}return e.each(t,function(n,a){(a||a===0)&#x26;&#x26;(!i||i.call(o||this,n,a,this,t)!==!
-1)&#x26;&#x26;a!==s&#x26;&#x26;a!=&#x22;prototype&#x22;&#x26;&#x26;(this[a]=e.clone(n,r,i,o,u||t,l))},f),a||(e.Object.each(l,function(e,t){if(e[s])try{delete e[s]}catch
+(n.type(t)){case"date":return new Date(t);case"regexp":return t;case"function":return t;case"array":f=[];break;default:if(t[s])return
+ l[t[s]];c=e.guid(),f=r?{}:e.Object(t),t[s]=c,l[c]=t}return e.each(t,function(n,a){(a||a===0)&amp;&amp;(!i||i.call(o||this,n,a,this,t)!==!
+1)&amp;&amp;a!==s&amp;&amp;a!="prototype"&amp;&amp;(this[a]=e.clone(n,r,i,o,u||t,l))},f),a||(e.Object.each(l,function(e,t){if(e[s])try{delete e[s]}catch
 (n){e[s]=null}},this),l=null),f}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -7647,26 +7642,26 @@ this._monitor(&#x22;publish&#x22;,t,{args:arguments}),i||(i=f[t]=new e.CustomEve
         return str;
     }
     if (!num) {
-        num = &#x27;32&#x27;;
+        num = '32';
     }
-    return &#x22;\u001b[&#x22; + num +&#x22;m&#x22; + str + &#x22;\u001b[0m&#x22;;
+    return "\u001b[" + num +"m" + str + "\u001b[0m";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
 var logFn = function(str, t, m) {
-var id = &#x27;&#x27;, lvl, mLvl;
+var id = '', lvl, mLvl;
 if (this.id) {
-    id = &#x27;[&#x27; + this.id + &#x27;]:&#x27;;
+    id = '[' + this.id + ']:';
 }
-t = t || &#x27;info&#x27;;
-m = (m) ? this.<span class="apidocCodeKeywordSpan">consoleColor</span>(&#x27; (&#x27; +  m.toLowerCase() + &#x27;):&#x27;, 35) : &#
-x27;&#x27;;
+t = t || 'info';
+m = (m) ? this.<span class="apidocCodeKeywordSpan">consoleColor</span>(' (' +  m.toLowerCase() + '):', 35) : &amp;#
+x27;';
 
 if (str === null) {
-    str = &#x27;null&#x27;;
+    str = 'null';
 }
 
-if ((typeof str === &#x27;object&#x27;) || str instanceof Array) {
+if ((typeof str === 'object') || str instanceof Array) {
     try {
 ...</pre></li>
     </ul>
@@ -7686,9 +7681,9 @@ if ((typeof str === &#x27;object&#x27;) || str instanceof Array) {
         args = arguments,
         l = args.length,
         instanceOf = function(o, type) {
-            return (o &#x26;&#x26; o.hasOwnProperty &#x26;&#x26; (o instanceof type));
+            return (o &amp;&amp; o.hasOwnProperty &amp;&amp; (o instanceof type));
         },
-        gconf = (typeof YUI_config !== &#x27;undefined&#x27;) &#x26;&#x26; YUI_config;
+        gconf = (typeof YUI_config !== 'undefined') &amp;&amp; YUI_config;
 
     if (!(instanceOf(Y, YUI))) {
         Y = new YUI();
@@ -7704,16 +7699,16 @@ if ((typeof str === &#x27;object&#x27;) || str instanceof Array) {
         @example
 
             YUI.GlobalConfig = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -7734,16 +7729,16 @@ if ((typeof str === &#x27;object&#x27;) || str instanceof Array) {
 
             // Single global var to include before YUI seed file
             YUI_config = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -7766,7 +7761,7 @@ if ((typeof str === &#x27;object&#x27;) || str instanceof Array) {
         // These are applied after YUI.GlobalConfig and YUI_Config,
         // overriding values set in those config files if there is a
         // matching property.
-        for (; i &#x3c; l; i++) {
+        for (; i &lt; l; i++) {
             Y.applyConfig(args[i]);
         }
 
@@ -7790,9 +7785,9 @@ if ((typeof str === &#x27;object&#x27;) || str instanceof Array) {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function f(t, r, u, l){var c=n(arguments,0,!0),h=i(u)?u:null,p,d,v,m,g,y,b,w,E;if(s(t)){w=[];if(o(t))for(y=0,b=t.length;y&#x3c;b;++y)c[0
-]=t[y],w.push(e.delegate.apply(e,c));else{c.unshift(null);for(y in t)t.hasOwnProperty(y)&#x26;&#x26;(c[0]=y,c[1]=t[y],w.push(e.delegate.apply
-(e,c)))}return new e.EventHandle(w)}p=t.split(/\|/),p.length&#x3e;1&#x26;&#x26;(g=p.shift(),c[0]=t=p.shift()),d=e.Node.DOM_EVENTS[t],s(d)&#x26;&#x26;d.delegate&#x26;&#x26;(E=d.delegate.apply(d,arguments));if(!E){if(!t||!r||!u||!l)return;v=h?e.Selector.query(h,null,!0):u,!v&#x26;&#x26;i(u)&#x26;&#x26;(E=e.on(&#x22;available&#x22;,function(){e.mix(E,e.delegate.apply(e,c),!0)},u)),!E&#x26;&#x26;v&#x26;&#x26;(c.splice(2,2,v),E=e.Event._attach(c,{facade:!1}),E.sub.filter=l,E.sub._notify=f.notifySub)}return E&#x26;&#x26;g&#x26;&#x26;(m=a[g]||(a[g]={}),m=m[t]||(m[t]=[]),m.push(E)),E}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">function f(t, r, u, l){var c=n(arguments,0,!0),h=i(u)?u:null,p,d,v,m,g,y,b,w,E;if(s(t)){w=[];if(o(t))for(y=0,b=t.length;y&lt;b;++y)c[0
+]=t[y],w.push(e.delegate.apply(e,c));else{c.unshift(null);for(y in t)t.hasOwnProperty(y)&amp;&amp;(c[0]=y,c[1]=t[y],w.push(e.delegate.apply
+(e,c)))}return new e.EventHandle(w)}p=t.split(/\|/),p.length&gt;1&amp;&amp;(g=p.shift(),c[0]=t=p.shift()),d=e.Node.DOM_EVENTS[t],s(d)&amp;&amp;d.delegate&amp;&amp;(E=d.delegate.apply(d,arguments));if(!E){if(!t||!r||!u||!l)return;v=h?e.Selector.query(h,null,!0):u,!v&amp;&amp;i(u)&amp;&amp;(E=e.on("available",function(){e.mix(E,e.delegate.apply(e,c),!0)},u)),!E&amp;&amp;v&amp;&amp;(c.splice(2,2,v),E=e.Event._attach(c,{facade:!1}),E.sub.filter=l,E.sub._notify=f.notifySub)}return E&amp;&amp;g&amp;&amp;(m=a[g]||(a[g]={}),m=m[t]||(m[t]=[]),m.push(E)),E}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -7805,14 +7800,14 @@ if ((typeof str === &#x27;object&#x27;) || str instanceof Array) {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">detach = function (t, n, r){var i=this._yuievt.events,s,o=e.Node,u=o&#x26;&#x26;e.instanceOf(this,o);if(!t&#x26;&#x26;this!==e){for(s in i)i.hasOwnProperty(s)&#x26;&#x26;
-i[s].detach(n,r);return u&#x26;&#x26;e.Event.purgeElement(o.getDOMNode(this)),this}var a=w(t,this._yuievt.config.prefix),l=p.isArray(a)?a[
-0]:null,c=a?a[3]:null,h,d=e.Env.evt.handles,v,m,g,y,b=function(e,t,n){var r=e[t],i,s;if(r)for(s=r.length-1;s&#x3e;=0;--s)i=r[s].evt,(
-i.host===n||i.el===n)&#x26;&#x26;r[s].detach()};if(l){m=d[l],t=a[1],v=u?e.Node.getDOMNode(this):this;if(m){if(t)b(m,t,v);else for(s in m)m
-.hasOwnProperty(s)&#x26;&#x26;b(m,s,v);return this}}else{if(p.isObject(t)&#x26;&#x26;t.detach)return t.detach(),this;if(u&#x26;&#x26;(!c||c in o.DOM_EVENTS))return
+    <li>description and source-code<pre class="apidocCodePre">detach = function (t, n, r){var i=this._yuievt.events,s,o=e.Node,u=o&amp;&amp;e.instanceOf(this,o);if(!t&amp;&amp;this!==e){for(s in i)i.hasOwnProperty(s)&amp;&amp;
+i[s].detach(n,r);return u&amp;&amp;e.Event.purgeElement(o.getDOMNode(this)),this}var a=w(t,this._yuievt.config.prefix),l=p.isArray(a)?a[
+0]:null,c=a?a[3]:null,h,d=e.Env.evt.handles,v,m,g,y,b=function(e,t,n){var r=e[t],i,s;if(r)for(s=r.length-1;s&gt;=0;--s)i=r[s].evt,(
+i.host===n||i.el===n)&amp;&amp;r[s].detach()};if(l){m=d[l],t=a[1],v=u?e.Node.getDOMNode(this):this;if(m){if(t)b(m,t,v);else for(s in m)m
+.hasOwnProperty(s)&amp;&amp;b(m,s,v);return this}}else{if(p.isObject(t)&amp;&amp;t.detach)return t.detach(),this;if(u&amp;&amp;(!c||c in o.DOM_EVENTS))return
  g=f.call(arguments,0),g[2]=o.getDOMNode(this),e.detach.apply(e,g),this}h=e.Env.evt.plugins[c];if(e.instanceOf(this,YUI)){g=f.call
-(arguments,0);if(h&#x26;&#x26;h.detach)return h.detach.apply(e,g),this;if(!t||!h&#x26;&#x26;o&#x26;&#x26;t in o.DOM_EVENTS)return g[0]=t,e.Event.detach.apply(
-e.Event,g),this}return y=i[a[1]],y&#x26;&#x26;y.detach(n,r),this}</pre></li>
+(arguments,0);if(h&amp;&amp;h.detach)return h.detach.apply(e,g),this;if(!t||!h&amp;&amp;o&amp;&amp;t in o.DOM_EVENTS)return g[0]=t,e.Event.detach.apply(
+e.Event,g),this}return y=i[a[1]],y&amp;&amp;y.detach(n,r),this}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -7838,7 +7833,7 @@ e.Event,g),this}return y=i[a[1]],y&#x26;&#x26;y.detach(n,r),this}</pre></li>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">each = function (e, t, n, r){return a(e,t,n,r,&#x22;each&#x22;)}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">each = function (e, t, n, r){return a(e,t,n,r,"each")}</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 @default true
 @since 3.3.0
@@ -7867,8 +7862,8 @@ relying on ES5 functionality, even when ES5 functionality is available.
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">extend = function (t, n, r, s){(!n||!t)&#x26;&#x26;e.error(&#x22;extend failed, verify dependencies&#x22;);var o=n.prototype,u=e.Object(o);return t.prototype=u,
-u.constructor=t,t.superclass=o,n!=Object&#x26;&#x26;o.constructor==i.constructor&#x26;&#x26;(o.constructor=n),r&#x26;&#x26;e.mix(u,r,!0),s&#x26;&#x26;e.mix(t,s,!0),t}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">extend = function (t, n, r, s){(!n||!t)&amp;&amp;e.error("extend failed, verify dependencies");var o=n.prototype,u=e.Object(o);return t.prototype=u,
+u.constructor=t,t.superclass=o,n!=Object&amp;&amp;o.constructor==i.constructor&amp;&amp;(o.constructor=n),r&amp;&amp;e.mix(u,r,!0),s&amp;&amp;e.mix(t,s,!0),t}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -7881,14 +7876,14 @@ u.constructor=t,t.superclass=o,n!=Object&#x26;&#x26;o.constructor==i.constructor
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">fire = function (e){var t=typeof e==&#x22;string&#x22;,n=arguments.length,r=e,i=this._yuievt,s=i.config,o=s.prefix,u,a,l,c;t&#x26;&#x26;n&#x3c;=3?n===2?c=[arguments
-[1]]:n===3?c=[arguments[1],arguments[2]]:c=[]:c=f.call(arguments,t?1:0),t||(r=e&#x26;&#x26;e.type),o&#x26;&#x26;(r=b(r,o)),a=i.events[r],this._hasSiblings
-&#x26;&#x26;(l=this.getSibling(r,a),l&#x26;&#x26;!a&#x26;&#x26;(a=this.publish(r))),(s.monitored&#x26;&#x26;(!a||a.monitored)||a&#x26;&#x26;a.monitored)&#x26;&#x26;this._monitor(&#x22;fire&#x22;,a||
-r,{args:c});if(!a){if(i.hasTargets)return this.bubble({type:r},c,this);u=!0}else l&#x26;&#x26;(a.sibling=l),u=a._fire(c);return i.chain?this
+    <li>description and source-code<pre class="apidocCodePre">fire = function (e){var t=typeof e=="string",n=arguments.length,r=e,i=this._yuievt,s=i.config,o=s.prefix,u,a,l,c;t&amp;&amp;n&lt;=3?n===2?c=[arguments
+[1]]:n===3?c=[arguments[1],arguments[2]]:c=[]:c=f.call(arguments,t?1:0),t||(r=e&amp;&amp;e.type),o&amp;&amp;(r=b(r,o)),a=i.events[r],this._hasSiblings
+&amp;&amp;(l=this.getSibling(r,a),l&amp;&amp;!a&amp;&amp;(a=this.publish(r))),(s.monitored&amp;&amp;(!a||a.monitored)||a&amp;&amp;a.monitored)&amp;&amp;this._monitor("fire",a||
+r,{args:c});if(!a){if(i.hasTargets)return this.bubble({type:r},c,this);u=!0}else l&amp;&amp;(a.sibling=l),u=a._fire(c);return i.chain?this
 :u}</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-            if (publisher === Y &#x26;&#x26; (!publisher.getEvent(LOGEVENT))) {
+            if (publisher === Y &amp;&amp; (!publisher.getEvent(LOGEVENT))) {
                 publisher.publish(LOGEVENT, {
                     broadcast: 2
                 });
@@ -7921,9 +7916,9 @@ r,{args:c});if(!a){if(i.hasTargets)return this.bubble({type:r},c,this);u=!0}else
 }
             }
 
-            if (publisher &#x26;&#x26; !silent) {
+            if (publisher &amp;&amp; !silent) {
 
-if (publisher === Y &#x26;&#x26; (!publisher.<span class="apidocCodeKeywordSpan">getEvent</span>(LOGEVENT))) {
+if (publisher === Y &amp;&amp; (!publisher.<span class="apidocCodeKeywordSpan">getEvent</span>(LOGEVENT))) {
     publisher.publish(LOGEVENT, {
         broadcast: 2
     });
@@ -7945,15 +7940,15 @@ publisher.fire(LOGEVENT, {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getLocation = function () {
     // It is safer to look this up every time because yui-base is attached to a
-    // YUI instance before a user&#x27;s config is applied; i.e. `Y.config.win` does
+    // YUI instance before a user's config is applied; i.e. `Y.config.win` does
     // not point the correct window object when this file is loaded.
     var win = Y.config.win;
 
     // It is not safe to hold a reference to the `location` object outside the
     // scope in which it is being used. The WebKit engine used in Safari and
-    // MobileSafari will &#x22;disconnect&#x22; the `location` object from the `window`
+    // MobileSafari will "disconnect" the `location` object from the `window`
     // when a page is restored from back/forward history cache.
-    return win &#x26;&#x26; win.location;
+    return win &amp;&amp; win.location;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -7967,7 +7962,7 @@ publisher.fire(LOGEVENT, {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">getSibling = function (e, t){var n;return e.indexOf(d)&#x3e;-1&#x26;&#x26;(e=y(e),n=this.getEvent(e,!0),n&#x26;&#x26;(n.applyConfig(t),n.bubbles=!1,n.broadcast=0)),n}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">getSibling = function (e, t){var n;return e.indexOf(d)&gt;-1&amp;&amp;(e=y(e),n=this.getEvent(e,!0),n&amp;&amp;(n.applyConfig(t),n.bubbles=!1,n.broadcast=0)),n}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -7981,7 +7976,7 @@ publisher.fire(LOGEVENT, {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">instanceOf = function (o, type) {
-    return (o &#x26;&#x26; o.hasOwnProperty &#x26;&#x26; (o instanceof type));
+    return (o &amp;&amp; o.hasOwnProperty &amp;&amp; (o instanceof type));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -7995,7 +7990,7 @@ publisher.fire(LOGEVENT, {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">io = function (t, n){var r=e.io._map[&#x22;io:0&#x22;]||new o;return r.send.apply(r,[t,n])}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">io = function (t, n){var r=e.io._map["io:0"]||new o;return r.send.apply(r,[t,n])}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -8014,7 +8009,7 @@ publisher.fire(LOGEVENT, {
     o = o || Y.config.win || Y;
 
     var cancelled = false,
-        method = (o &#x26;&#x26; Y.Lang.isString(fn)) ? o[fn] : fn,
+        method = (o &amp;&amp; Y.Lang.isString(fn)) ? o[fn] : fn,
         wrapper = function() {
             // IE 8- may execute a setInterval callback one last time
             // after clearInterval was called, so in order to preserve
@@ -8064,48 +8059,48 @@ publisher.fire(LOGEVENT, {
     // or the event call stack contains a consumer of the yui:log event
     if (c.debug) {
         // apply source filters
-        src = src || &#x22;&#x22;;
-        if (typeof src !== &#x22;undefined&#x22;) {
+        src = src || "";
+        if (typeof src !== "undefined") {
             excl = c.logExclude;
             incl = c.logInclude;
-            if (incl &#x26;&#x26; !(src in incl)) {
+            if (incl &amp;&amp; !(src in incl)) {
                 bail = 1;
-            } else if (incl &#x26;&#x26; (src in incl)) {
+            } else if (incl &amp;&amp; (src in incl)) {
                 bail = !incl[src];
-            } else if (excl &#x26;&#x26; (src in excl)) {
+            } else if (excl &amp;&amp; (src in excl)) {
                 bail = excl[src];
             }
 
             // Set a default category of info if the category was not defined.
-            if ((typeof cat === &#x27;undefined&#x27;)) {
-                cat = &#x27;info&#x27;;
+            if ((typeof cat === 'undefined')) {
+                cat = 'info';
             }
 
             // Determine the current minlevel as defined in configuration
-            Y.config.logLevel = Y.config.logLevel || &#x27;debug&#x27;;
+            Y.config.logLevel = Y.config.logLevel || 'debug';
             minlevel = LEVELS[Y.config.logLevel.toLowerCase()];
 
-            if (cat in LEVELS &#x26;&#x26; LEVELS[cat] &#x3c; minlevel) {
-                // Skip this message if the we don&#x27;t meet the defined minlevel
+            if (cat in LEVELS &amp;&amp; LEVELS[cat] &lt; minlevel) {
+                // Skip this message if the we don't meet the defined minlevel
                 bail = 1;
             }
         }
         if (!bail) {
             if (c.useBrowserConsole) {
-                m = (src) ? src + &#x27;: &#x27; + msg : msg;
+                m = (src) ? src + ': ' + msg : msg;
                 if (Y.Lang.isFunction(c.logFn)) {
                     c.logFn.call(Y, msg, cat, src);
-                } else if (typeof console !== UNDEFINED &#x26;&#x26; console.log) {
-                    f = (cat &#x26;&#x26; console[cat] &#x26;&#x26; (cat in LEVELS)) ? cat : &#x27;log&#x27;;
+                } else if (typeof console !== UNDEFINED &amp;&amp; console.log) {
+                    f = (cat &amp;&amp; console[cat] &amp;&amp; (cat in LEVELS)) ? cat : 'log';
                     console[f](m);
                 } else if (typeof opera !== UNDEFINED) {
                     opera.postError(m);
                 }
             }
 
-            if (publisher &#x26;&#x26; !silent) {
+            if (publisher &amp;&amp; !silent) {
 
-                if (publisher === Y &#x26;&#x26; (!publisher.getEvent(LOGEVENT))) {
+                if (publisher === Y &amp;&amp; (!publisher.getEvent(LOGEVENT))) {
                     publisher.publish(LOGEVENT, {
                         broadcast: 2
                     });
@@ -8123,14 +8118,14 @@ publisher.fire(LOGEVENT, {
     return Y;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    Y._attach([&#x27;yui-base&#x27;]);
+    Y._attach(['yui-base']);
     Y._attach(core);
 
     if (Y.Loader) {
         getLoader(Y);
     }
 
-    // Y.<span class="apidocCodeKeywordSpan">log</span>(Y.id + &#x27; initialized&#x27;, &#x27;info&#x27;, &#x27;yui&#x27;);
+    // Y.<span class="apidocCodeKeywordSpan">log</span>(Y.id + ' initialized', 'info', 'yui');
 },
 
 /**
@@ -8157,7 +8152,7 @@ whitelisted.
         key,
         obj;
 
-    for (; i &#x3c; len; ++i) {
+    for (; i &lt; len; ++i) {
         obj = arguments[i];
 
         for (key in obj) {
@@ -8179,11 +8174,11 @@ if (!Lang.isArray(urls)) {
 
 options = Y.<span class="apidocCodeKeywordSpan">merge</span>(this.options, options);
 
-// Clone the attributes object so we don&#x27;t end up modifying it by ref.
+// Clone the attributes object so we don't end up modifying it by ref.
 options.attributes = Y.merge(this.options.attributes,
         options.attributes);
 
-for (i = 0, len = urls.length; i &#x3c; len; ++i) {
+for (i = 0, len = urls.length; i &lt; len; ++i) {
     url = urls[i];
 ...</pre></li>
     </ul>
@@ -8203,20 +8198,20 @@ for (i = 0, len = urls.length; i &#x3c; len; ++i) {
     <li>example usage<pre class="apidocCodePre">...
 
     //if (!loader || !loader.moduleInfo[name]) {
-    //if ((!loader || !loader.moduleInfo[name]) &#x26;&#x26; !moot) {
-    if (!moot &#x26;&#x26; name) {
-        if ((name.indexOf(&#x27;skin-&#x27;) === -1) &#x26;&#x26; (name.indexOf(&#x27;css&#x27;) === -1)) {
+    //if ((!loader || !loader.moduleInfo[name]) &amp;&amp; !moot) {
+    if (!moot &amp;&amp; name) {
+        if ((name.indexOf('skin-') === -1) &amp;&amp; (name.indexOf('css') === -1)) {
             Y.Env._missed.push(name);
             Y.Env._missed = Y.Array.dedupe(Y.Env._missed);
-            Y.<span class="apidocCodeKeywordSpan">message</span>(&#x27;NOT loaded: &#x27; + name, &#x27;warn&#x27;, &#x27;yui&#x27
+            Y.<span class="apidocCodeKeywordSpan">message</span>('NOT loaded: ' + name, 'warn', 'yui'
 ;);
         }
     }
 } else {
     done[name] = true;
-    //Don&#x27;t like this, but in case a mod was asked for once, then we fetch it
+    //Don't like this, but in case a mod was asked for once, then we fetch it
     //We need to remove it from the missed list ^davglass
-    for (j = 0; j &#x3c; Y.Env._missed.length; j++) {
+    for (j = 0; j &lt; Y.Env._missed.length; j++) {
 ...</pre></li>
     </ul>
 
@@ -8233,7 +8228,7 @@ for (i = 0, len = urls.length; i &#x3c; len; ++i) {
     var alwaysOverwrite, exists, from, i, key, len, to;
 
     // If no supplier is given, we return the receiver. If no receiver is given,
-    // we return Y. Returning Y doesn&#x27;t make much sense to me, but it&#x27;s
+    // we return Y. Returning Y doesn't make much sense to me, but it's
     // grandfathered in for backcompat reasons.
     if (!receiver || !supplier) {
         return receiver || Y;
@@ -8253,7 +8248,7 @@ for (i = 0, len = urls.length; i &#x3c; len; ++i) {
         from = mode === 1 || mode === 3 ? supplier.prototype : supplier;
         to   = mode === 1 || mode === 4 ? receiver.prototype : receiver;
 
-        // If either the supplier or receiver doesn&#x27;t actually have a
+        // If either the supplier or receiver doesn't actually have a
         // prototype property, then we could end up with an undefined `from`
         // or `to`. If that happens, we abort and return the receiver.
         if (!from || !to) {
@@ -8266,16 +8261,16 @@ for (i = 0, len = urls.length; i &#x3c; len; ++i) {
 
     // If `overwrite` is truthy and `merge` is falsy, then we can skip a
     // property existence check on each iteration and save some time.
-    alwaysOverwrite = overwrite &#x26;&#x26; !merge;
+    alwaysOverwrite = overwrite &amp;&amp; !merge;
 
     if (whitelist) {
-        for (i = 0, len = whitelist.length; i &#x3c; len; ++i) {
+        for (i = 0, len = whitelist.length; i &lt; len; ++i) {
             key = whitelist[i];
 
             // We call `Object.prototype.hasOwnProperty` instead of calling
-            // `hasOwnProperty` on the object itself, since the object&#x27;s
+            // `hasOwnProperty` on the object itself, since the object's
             // `hasOwnProperty` method may have been overridden or removed.
-            // Also, some native objects don&#x27;t implement a `hasOwnProperty`
+            // Also, some native objects don't implement a `hasOwnProperty`
             // method.
             if (!hasOwn.call(from, key)) {
                 continue;
@@ -8286,21 +8281,21 @@ for (i = 0, len = urls.length; i &#x3c; len; ++i) {
             // prototype members on `to`.
             exists = alwaysOverwrite ? false : key in to;
 
-            if (merge &#x26;&#x26; exists &#x26;&#x26; isObject(to[key], true)
-                    &#x26;&#x26; isObject(from[key], true)) {
-                // If we&#x27;re in merge mode, and the key is present on both
+            if (merge &amp;&amp; exists &amp;&amp; isObject(to[key], true)
+                    &amp;&amp; isObject(from[key], true)) {
+                // If we're in merge mode, and the key is present on both
                 // objects, and the value on both objects is either an object or
                 // an array (but not a function), then we recurse to merge the
                 // `from` value into the `to` value instead of overwriting it.
                 //
-                // Note: It&#x27;s intentional that the whitelist isn&#x27;t passed to the
+                // Note: It's intentional that the whitelist isn't passed to the
                 // recursive call here. This is legacy behavior that lots of
                 // code still depends on.
                 Y.mix(to[key], from[key], overwrite, null, 0, merge);
             } else if (overwrite || !exists) {
-                // We&#x27;re not in merge mode, so we&#x27;ll only copy the `from` value
-                // to the `to` value if we&#x27;re in overwrite mode or if the
-                // current key doesn&#x27;t exist on the `to` object.
+                // We're not in merge mode, so we'll only copy the `from` value
+                // to the `to` value if we're in overwrite mode or if the
+                // current key doesn't exist on the `to` object.
                 to[key] = from[key];
             }
         }
@@ -8347,27 +8342,27 @@ to   = mode === 1 || mode === 4 ? receiver.prototype : receiver;
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">on = function (t, n, r){var i=this._yuievt,s=w(t,i.config.prefix),o,u,a,l,c,h,d,v=e.Env.evt.handles,g,y,b,E=e.Node,S,x,T;this._monitor(&#x22;
-attach&#x22;,s[1],{args:arguments,category:s[0],after:s[2]});if(p.isObject(t))return p.isFunction(t)?e.Do.before.apply(e.Do,arguments
-):(o=n,u=r,a=f.call(arguments,0),l=[],p.isArray(t)&#x26;&#x26;(T=!0),g=t._after,delete t._after,e.each(t,function(e,t){p.isObject(e)&#x26;&#x26;(o=e
-.fn||(p.isFunction(e)?e:o),u=e.context||u);var n=g?m:&#x22;&#x22;;a[0]=n+(T?e:t),a[1]=o,a[2]=u,l.push(this.on.apply(this,a))},this),i.chain
-?this:new e.EventHandle(l));h=s[0],g=s[2],b=s[3];if(E&#x26;&#x26;e.instanceOf(this,E)&#x26;&#x26;b in E.DOM_EVENTS)return a=f.call(arguments,0),a.splice
+    <li>description and source-code<pre class="apidocCodePre">on = function (t, n, r){var i=this._yuievt,s=w(t,i.config.prefix),o,u,a,l,c,h,d,v=e.Env.evt.handles,g,y,b,E=e.Node,S,x,T;this._monitor("
+attach",s[1],{args:arguments,category:s[0],after:s[2]});if(p.isObject(t))return p.isFunction(t)?e.Do.before.apply(e.Do,arguments
+):(o=n,u=r,a=f.call(arguments,0),l=[],p.isArray(t)&amp;&amp;(T=!0),g=t._after,delete t._after,e.each(t,function(e,t){p.isObject(e)&amp;&amp;(o=e
+.fn||(p.isFunction(e)?e:o),u=e.context||u);var n=g?m:"";a[0]=n+(T?e:t),a[1]=o,a[2]=u,l.push(this.on.apply(this,a))},this),i.chain
+?this:new e.EventHandle(l));h=s[0],g=s[2],b=s[3];if(E&amp;&amp;e.instanceOf(this,E)&amp;&amp;b in E.DOM_EVENTS)return a=f.call(arguments,0),a.splice
 (2,0,E.getDOMNode(this)),e.on.apply(e,a);t=s[1];if(e.instanceOf(this,YUI)){y=e.Env.evt.plugins[t],a=f.call(arguments,0),a[0]=b,E
-&#x26;&#x26;(S=a[2],e.instanceOf(S,e.NodeList)?S=e.NodeList.getDOMNodes(S):e.instanceOf(S,E)&#x26;&#x26;(S=E.getDOMNode(S)),x=b in E.DOM_EVENTS,x&#x26;&#x26;(
+&amp;&amp;(S=a[2],e.instanceOf(S,e.NodeList)?S=e.NodeList.getDOMNodes(S):e.instanceOf(S,E)&amp;&amp;(S=E.getDOMNode(S)),x=b in E.DOM_EVENTS,x&amp;&amp;(
 a[2]=S));if(y)d=y.on.apply(e,a);else if(!t||x)d=e.Event._attach(a)}return d||(c=i.events[t]||this.publish(t),d=c._on(n,r,arguments
-.length&#x3e;3?f.call(arguments,3):null,g?&#x22;after&#x22;:!0),t.indexOf(&#x22;*:&#x22;)!==-1&#x26;&#x26;(this._hasSiblings=!0)),h&#x26;&#x26;(v[h]=v[h]||{},v[h][t]=v[h][t]||[],
+.length&gt;3?f.call(arguments,3):null,g?"after":!0),t.indexOf("*:")!==-1&amp;&amp;(this._hasSiblings=!0)),h&amp;&amp;(v[h]=v[h]||{},v[h][t]=v[h][t]||[],
 v[h][t].push(d)),i.chain?this:d}</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-    Y.log(&#x27;Delaying use callback until: &#x27; + until.event, &#x27;info&#x27;, &#x27;yui&#x27;);
+    Y.log('Delaying use callback until: ' + until.event, 'info', 'yui');
     return function() {
-        Y.log(&#x27;Use callback fired, waiting on delay&#x27;, &#x27;info&#x27;, &#x27;yui&#x27;);
+        Y.log('Use callback fired, waiting on delay', 'info', 'yui');
         var args = arguments;
         Y._use(mod, function() {
-            Y.log(&#x27;Delayed use wrapper callback after dependencies&#x27;, &#x27;info&#x27;, &#x27;yui&#x27;);
+            Y.log('Delayed use wrapper callback after dependencies', 'info', 'yui');
             Y.<span class="apidocCodeKeywordSpan">on</span>(until.event, function() {
                 args[1].delayUntil = until.event;
-                Y.log(&#x27;Delayed use callback done after &#x27; + until.event, &#x27;info&#x27;, &#x27;yui&#x27;);
+                Y.log('Delayed use callback done after ' + until.event, 'info', 'yui');
                 cb.apply(Y, args);
             }, until.args);
         });
@@ -8385,7 +8380,7 @@ v[h][t].push(d)),i.chain?this:d}</pre></li>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">once = function (){var e=this.on.apply(this,arguments);return e.batch(function(e){e.sub&#x26;&#x26;(e.sub.once=!0)}),e}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">once = function (){var e=this.on.apply(this,arguments);return e.batch(function(e){e.sub&amp;&amp;(e.sub.once=!0)}),e}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -8398,7 +8393,7 @@ v[h][t].push(d)),i.chain?this:d}</pre></li>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">onceAfter = function (){var e=this.after.apply(this,arguments);return e.batch(function(e){e.sub&#x26;&#x26;(e.sub.once=!0)}),e}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">onceAfter = function (){var e=this.after.apply(this,arguments);return e.batch(function(e){e.sub&amp;&amp;(e.sub.once=!0)}),e}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -8424,16 +8419,16 @@ v[h][t].push(d)),i.chain?this:d}</pre></li>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">publish = function (t, n){var r,i=this._yuievt,s=i.config,o=s.prefix;return typeof t==&#x22;string&#x22;?(o&#x26;&#x26;(t=b(t,o)),r=this._publish(t,s,n)):(r={},
-e.each(t,function(e,t){o&#x26;&#x26;(t=b(t,o)),r[t]=this._publish(t,s,e||n)},this)),r}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">publish = function (t, n){var r,i=this._yuievt,s=i.config,o=s.prefix;return typeof t=="string"?(o&amp;&amp;(t=b(t,o)),r=this._publish(t,s,n)):(r={},
+e.each(t,function(e,t){o&amp;&amp;(t=b(t,o)),r[t]=this._publish(t,s,e||n)},this)),r}</pre></li>
     <li>example usage<pre class="apidocCodePre">...
     opera.postError(m);
 }
             }
 
-            if (publisher &#x26;&#x26; !silent) {
+            if (publisher &amp;&amp; !silent) {
 
-if (publisher === Y &#x26;&#x26; (!publisher.getEvent(LOGEVENT))) {
+if (publisher === Y &amp;&amp; (!publisher.getEvent(LOGEVENT))) {
     publisher.<span class="apidocCodeKeywordSpan">publish</span>(LOGEVENT, {
         broadcast: 2
     });
@@ -8454,7 +8449,7 @@ publisher.fire(LOGEVENT, {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">rbind = function (t, r){var i=arguments.length&#x3e;2?e.Array(arguments,2,!0):null;return function(){var s=n.isString(t)?r[t]:t,o=i?e.Array(arguments
+    <li>description and source-code<pre class="apidocCodePre">rbind = function (t, r){var i=arguments.length&gt;2?e.Array(arguments,2,!0):null;return function(){var s=n.isString(t)?r[t]:t,o=i?e.Array(arguments
 ,0,!0).concat(i):arguments;return s.apply(r||s,o)}}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -8468,7 +8463,7 @@ publisher.fire(LOGEVENT, {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">some = function (e, t, n, r){return a(e,t,n,r,&#x22;some&#x22;)}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">some = function (e, t, n, r){return a(e,t,n,r,"some")}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -8495,7 +8490,7 @@ publisher.fire(LOGEVENT, {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">throttle = function (t, n){n=n?n:e.config.throttleTime||150;if(n===-1)return function(){t.apply(this,arguments)};var r=e.Lang.now();return function
-(){var i=e.Lang.now();i-r&#x3e;n&#x26;&#x26;(r=i,t.apply(this,arguments))}}</pre></li>
+(){var i=e.Lang.now();i-r&gt;n&amp;&amp;(r=i,t.apply(this,arguments))}}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -8613,9 +8608,9 @@ publisher.fire(LOGEVENT, {
         args = arguments,
         l = args.length,
         instanceOf = function(o, type) {
-            return (o &#x26;&#x26; o.hasOwnProperty &#x26;&#x26; (o instanceof type));
+            return (o &amp;&amp; o.hasOwnProperty &amp;&amp; (o instanceof type));
         },
-        gconf = (typeof YUI_config !== &#x27;undefined&#x27;) &#x26;&#x26; YUI_config;
+        gconf = (typeof YUI_config !== 'undefined') &amp;&amp; YUI_config;
 
     if (!(instanceOf(Y, YUI))) {
         Y = new YUI();
@@ -8631,16 +8626,16 @@ publisher.fire(LOGEVENT, {
         @example
 
             YUI.GlobalConfig = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -8661,16 +8656,16 @@ publisher.fire(LOGEVENT, {
 
             // Single global var to include before YUI seed file
             YUI_config = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -8693,7 +8688,7 @@ publisher.fire(LOGEVENT, {
         // These are applied after YUI.GlobalConfig and YUI_Config,
         // overriding values set in those config files if there is a
         // matching property.
-        for (; i &#x3c; l; i++) {
+        for (; i &lt; l; i++) {
             Y.applyConfig(args[i]);
         }
 
@@ -8757,9 +8752,9 @@ var inst = getInstance();
         args = arguments,
         l = args.length,
         instanceOf = function(o, type) {
-            return (o &#x26;&#x26; o.hasOwnProperty &#x26;&#x26; (o instanceof type));
+            return (o &amp;&amp; o.hasOwnProperty &amp;&amp; (o instanceof type));
         },
-        gconf = (typeof YUI_config !== &#x27;undefined&#x27;) &#x26;&#x26; YUI_config;
+        gconf = (typeof YUI_config !== 'undefined') &amp;&amp; YUI_config;
 
     if (!(instanceOf(Y, YUI))) {
         Y = new YUI();
@@ -8775,16 +8770,16 @@ var inst = getInstance();
         @example
 
             YUI.GlobalConfig = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -8805,16 +8800,16 @@ var inst = getInstance();
 
             // Single global var to include before YUI seed file
             YUI_config = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -8837,7 +8832,7 @@ var inst = getInstance();
         // These are applied after YUI.GlobalConfig and YUI_Config,
         // overriding values set in those config files if there is a
         // matching property.
-        for (; i &#x3c; l; i++) {
+        for (; i &lt; l; i++) {
             Y.applyConfig(args[i]);
         }
 
@@ -8888,9 +8883,9 @@ var inst = getInstance();
         args = arguments,
         l = args.length,
         instanceOf = function(o, type) {
-            return (o &#x26;&#x26; o.hasOwnProperty &#x26;&#x26; (o instanceof type));
+            return (o &amp;&amp; o.hasOwnProperty &amp;&amp; (o instanceof type));
         },
-        gconf = (typeof YUI_config !== &#x27;undefined&#x27;) &#x26;&#x26; YUI_config;
+        gconf = (typeof YUI_config !== 'undefined') &amp;&amp; YUI_config;
 
     if (!(instanceOf(Y, YUI))) {
         Y = new YUI();
@@ -8906,16 +8901,16 @@ var inst = getInstance();
         @example
 
             YUI.GlobalConfig = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -8936,16 +8931,16 @@ var inst = getInstance();
 
             // Single global var to include before YUI seed file
             YUI_config = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -8968,7 +8963,7 @@ var inst = getInstance();
         // These are applied after YUI.GlobalConfig and YUI_Config,
         // overriding values set in those config files if there is a
         // matching property.
-        for (; i &#x3c; l; i++) {
+        for (; i &lt; l; i++) {
             Y.applyConfig(args[i]);
         }
 
@@ -9019,9 +9014,9 @@ var inst = getInstance();
         args = arguments,
         l = args.length,
         instanceOf = function(o, type) {
-            return (o &#x26;&#x26; o.hasOwnProperty &#x26;&#x26; (o instanceof type));
+            return (o &amp;&amp; o.hasOwnProperty &amp;&amp; (o instanceof type));
         },
-        gconf = (typeof YUI_config !== &#x27;undefined&#x27;) &#x26;&#x26; YUI_config;
+        gconf = (typeof YUI_config !== 'undefined') &amp;&amp; YUI_config;
 
     if (!(instanceOf(Y, YUI))) {
         Y = new YUI();
@@ -9037,16 +9032,16 @@ var inst = getInstance();
         @example
 
             YUI.GlobalConfig = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -9067,16 +9062,16 @@ var inst = getInstance();
 
             // Single global var to include before YUI seed file
             YUI_config = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -9099,7 +9094,7 @@ var inst = getInstance();
         // These are applied after YUI.GlobalConfig and YUI_Config,
         // overriding values set in those config files if there is a
         // matching property.
-        for (; i &#x3c; l; i++) {
+        for (; i &lt; l; i++) {
             Y.applyConfig(args[i]);
         }
 
@@ -9150,9 +9145,9 @@ var inst = getInstance();
         args = arguments,
         l = args.length,
         instanceOf = function(o, type) {
-            return (o &#x26;&#x26; o.hasOwnProperty &#x26;&#x26; (o instanceof type));
+            return (o &amp;&amp; o.hasOwnProperty &amp;&amp; (o instanceof type));
         },
-        gconf = (typeof YUI_config !== &#x27;undefined&#x27;) &#x26;&#x26; YUI_config;
+        gconf = (typeof YUI_config !== 'undefined') &amp;&amp; YUI_config;
 
     if (!(instanceOf(Y, YUI))) {
         Y = new YUI();
@@ -9168,16 +9163,16 @@ var inst = getInstance();
         @example
 
             YUI.GlobalConfig = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -9198,16 +9193,16 @@ var inst = getInstance();
 
             // Single global var to include before YUI seed file
             YUI_config = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -9230,7 +9225,7 @@ var inst = getInstance();
         // These are applied after YUI.GlobalConfig and YUI_Config,
         // overriding values set in those config files if there is a
         // matching property.
-        for (; i &#x3c; l; i++) {
+        for (; i &lt; l; i++) {
             Y.applyConfig(args[i]);
         }
 
@@ -9281,9 +9276,9 @@ var inst = getInstance();
         args = arguments,
         l = args.length,
         instanceOf = function(o, type) {
-            return (o &#x26;&#x26; o.hasOwnProperty &#x26;&#x26; (o instanceof type));
+            return (o &amp;&amp; o.hasOwnProperty &amp;&amp; (o instanceof type));
         },
-        gconf = (typeof YUI_config !== &#x27;undefined&#x27;) &#x26;&#x26; YUI_config;
+        gconf = (typeof YUI_config !== 'undefined') &amp;&amp; YUI_config;
 
     if (!(instanceOf(Y, YUI))) {
         Y = new YUI();
@@ -9299,16 +9294,16 @@ var inst = getInstance();
         @example
 
             YUI.GlobalConfig = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -9329,16 +9324,16 @@ var inst = getInstance();
 
             // Single global var to include before YUI seed file
             YUI_config = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -9361,7 +9356,7 @@ var inst = getInstance();
         // These are applied after YUI.GlobalConfig and YUI_Config,
         // overriding values set in those config files if there is a
         // matching property.
-        for (; i &#x3c; l; i++) {
+        for (; i &lt; l; i++) {
             Y.applyConfig(args[i]);
         }
 
@@ -9412,9 +9407,9 @@ var inst = getInstance();
         args = arguments,
         l = args.length,
         instanceOf = function(o, type) {
-            return (o &#x26;&#x26; o.hasOwnProperty &#x26;&#x26; (o instanceof type));
+            return (o &amp;&amp; o.hasOwnProperty &amp;&amp; (o instanceof type));
         },
-        gconf = (typeof YUI_config !== &#x27;undefined&#x27;) &#x26;&#x26; YUI_config;
+        gconf = (typeof YUI_config !== 'undefined') &amp;&amp; YUI_config;
 
     if (!(instanceOf(Y, YUI))) {
         Y = new YUI();
@@ -9430,16 +9425,16 @@ var inst = getInstance();
         @example
 
             YUI.GlobalConfig = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -9460,16 +9455,16 @@ var inst = getInstance();
 
             // Single global var to include before YUI seed file
             YUI_config = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -9492,7 +9487,7 @@ var inst = getInstance();
         // These are applied after YUI.GlobalConfig and YUI_Config,
         // overriding values set in those config files if there is a
         // matching property.
-        for (; i &#x3c; l; i++) {
+        for (; i &lt; l; i++) {
             Y.applyConfig(args[i]);
         }
 
@@ -9543,9 +9538,9 @@ var inst = getInstance();
         args = arguments,
         l = args.length,
         instanceOf = function(o, type) {
-            return (o &#x26;&#x26; o.hasOwnProperty &#x26;&#x26; (o instanceof type));
+            return (o &amp;&amp; o.hasOwnProperty &amp;&amp; (o instanceof type));
         },
-        gconf = (typeof YUI_config !== &#x27;undefined&#x27;) &#x26;&#x26; YUI_config;
+        gconf = (typeof YUI_config !== 'undefined') &amp;&amp; YUI_config;
 
     if (!(instanceOf(Y, YUI))) {
         Y = new YUI();
@@ -9561,16 +9556,16 @@ var inst = getInstance();
         @example
 
             YUI.GlobalConfig = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -9591,16 +9586,16 @@ var inst = getInstance();
 
             // Single global var to include before YUI seed file
             YUI_config = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -9623,7 +9618,7 @@ var inst = getInstance();
         // These are applied after YUI.GlobalConfig and YUI_Config,
         // overriding values set in those config files if there is a
         // matching property.
-        for (; i &#x3c; l; i++) {
+        for (; i &lt; l; i++) {
             Y.applyConfig(args[i]);
         }
 
@@ -9674,9 +9669,9 @@ var inst = getInstance();
         args = arguments,
         l = args.length,
         instanceOf = function(o, type) {
-            return (o &#x26;&#x26; o.hasOwnProperty &#x26;&#x26; (o instanceof type));
+            return (o &amp;&amp; o.hasOwnProperty &amp;&amp; (o instanceof type));
         },
-        gconf = (typeof YUI_config !== &#x27;undefined&#x27;) &#x26;&#x26; YUI_config;
+        gconf = (typeof YUI_config !== 'undefined') &amp;&amp; YUI_config;
 
     if (!(instanceOf(Y, YUI))) {
         Y = new YUI();
@@ -9692,16 +9687,16 @@ var inst = getInstance();
         @example
 
             YUI.GlobalConfig = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -9722,16 +9717,16 @@ var inst = getInstance();
 
             // Single global var to include before YUI seed file
             YUI_config = {
-                filter: &#x27;debug&#x27;
+                filter: 'debug'
             };
 
-            YUI().use(&#x27;node&#x27;, function (Y) {
+            YUI().use('node', function (Y) {
                 // debug files used here
             });
 
             YUI({
-                filter: &#x27;min&#x27;
-            }).use(&#x27;node&#x27;, function (Y) {
+                filter: 'min'
+            }).use('node', function (Y) {
                 // min files used here
             });
 
@@ -9754,7 +9749,7 @@ var inst = getInstance();
         // These are applied after YUI.GlobalConfig and YUI_Config,
         // overriding values set in those config files if there is a
         // matching property.
-        for (; i &#x3c; l; i++) {
+        for (; i &lt; l; i++) {
             Y.applyConfig(args[i]);
         }
 
@@ -9794,3 +9789,4 @@ var inst = getInstance();
     ]
 </div>
 </div>
+</body></html>
